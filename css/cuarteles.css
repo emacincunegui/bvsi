@@ -1,0 +1,242 @@
+/* ============================= */
+/* CUARTELES */
+/* ============================= */
+
+.station-page {
+    background: #fff;
+}
+
+.station-hero {
+    position: relative;
+    min-height: 520px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+}
+
+.gallery-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+    .gallery-slide.active {
+        opacity: 1;
+    }
+
+    .gallery-slide img {
+        width: 100%;
+        height: 120%;
+        object-fit: cover;
+        object-position: center;
+        transform: translateY(0);
+    }
+
+.station-hero-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient( to top, rgba(0, 0, 0, .78), rgba(0, 0, 0, .15) );
+}
+
+.station-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px 80px;
+    color: #fff;
+}
+
+.breadcrumb {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 14px;
+    opacity: .85;
+}
+
+.station-hero h1 {
+    font-size: clamp(42px, 6vw, 72px);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.station-hero-content > p:last-child {
+    max-width: 720px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.gallery-dots {
+    position: absolute;
+    z-index: 3;
+    bottom: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
+}
+
+    .dot.active {
+        background: #fff;
+    }
+
+.section-padding {
+    padding: 80px 24px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gray-section {
+    background: #f4f4f4;
+}
+
+.station-info-grid {
+    display: grid;
+    grid-template-columns: 1.5fr .8fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.section-label {
+    display: inline-block;
+    color: #c40000;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.station-info-text h2,
+.section-header h2 {
+    font-size: 38px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.station-info-text p,
+.section-header p,
+.feature-card p,
+.unit-card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.station-data-card {
+    background: #111;
+    color: #fff;
+    padding: 32px;
+}
+
+    .station-data-card h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .station-data-card ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .station-data-card li {
+        padding: 12px 0;
+        border-bottom: 1px solid rgba(255,255,255,.15);
+        line-height: 1.5;
+    }
+
+        .station-data-card li:last-child {
+            border-bottom: none;
+        }
+
+.section-header {
+    max-width: 760px;
+    margin-bottom: 42px;
+}
+
+.features-grid,
+.units-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.feature-card,
+.unit-card {
+    background: #fff;
+    padding: 30px;
+    border-top: 4px solid #c40000;
+    box-shadow: 0 12px 28px rgba(0,0,0,.08);
+}
+
+    .feature-card h3,
+    .unit-card h3 {
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+
+.map-box {
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+    box-shadow: 0 12px 28px rgba(0,0,0,.12);
+}
+
+    .map-box iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+
+@media (max-width: 900px) {
+    .station-hero {
+        min-height: 420px;
+    }
+
+    .station-info-grid,
+    .features-grid,
+    .units-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-padding {
+        padding: 60px 20px;
+    }
+
+    .station-info-text h2,
+    .section-header h2 {
+        font-size: 30px;
+    }
+
+    .station-hero-content {
+        padding: 0 20px 76px;
+    }
+
+        .station-hero-content > p:last-child {
+            font-size: 16px;
+        }
+
+    .map-box {
+        height: 340px;
+    }
+}
