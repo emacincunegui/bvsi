@@ -1,5 +1,5 @@
 /* =========================================================
-   P¡GINA DE VERIFICACI”N DE CREDENCIAL
+   P√ÅGINA DE VERIFICACI√ìN DE CREDENCIAL
    ========================================================= */
 
 .credential-page {
@@ -10,7 +10,7 @@
 
 
 /* =========================================================
-   HEADER ESPECÕFICO
+   HEADER ESPEC√çFICO
    ========================================================= */
 
 .credential-site-title {
@@ -192,7 +192,7 @@
 
 /* =========================================================
    ESTADO DE CREDENCIAL
-   Se desarrollar· m·s adelante
+   Se desarrollar√° m√°s adelante
    ========================================================= */
 
 .credential-status {
@@ -367,6 +367,16 @@
     .credential-specialty {
         flex-basis: calc((100% - 72px) / 4);
     }
+
+   .credential-phone {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+    .credential-phone:hover {
+        text-decoration: underline;
+    }
 }
 
 
@@ -477,11 +487,21 @@
         .credential-verification-note p {
             font-size: 14px;
         }
+
+   .credential-phone {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+    .credential-phone:hover {
+        text-decoration: underline;
+    }
 }
 
 
 /* =========================================================
-   CELULARES PEQUE—OS
+   CELULARES PEQUE√ëOS
    ========================================================= */
 
 @media (max-width: 380px) {
@@ -507,5 +527,15 @@
     .credential-section {
         padding-left: 16px;
         padding-right: 16px;
+    }
+
+   .credential-phone {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+    .credential-phone:hover {
+        text-decoration: underline;
     }
 }
