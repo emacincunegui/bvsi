@@ -23,6 +23,7 @@
         grupoSanguineo: 'A+',
         domicilio: 'Av. Santa Fe 650, Acassuso',
         transporte: 'Vehículo particular',
+        telefono: '11 4747-8927',
 
         especialidades: [
             {
@@ -94,6 +95,9 @@
         transporte:
             document.getElementById('transporte-integrante'),
 
+        telefono:
+            document.getElementById('telefono-integrante'),
+
         seccionEspecialidades:
             document.getElementById('seccion-especialidades'),
 
@@ -137,8 +141,12 @@
         elementos.transporte.textContent =
             datos.transporte || 'No informado';
 
+        elementos.telefono.textContent =
+            datos.telefono || 'No informado';
+
         cargarFoto(datos);
         cargarInsignia(datos);
+        cargarTelefono(datos.telefono);
         cargarEspecialidades(datos.especialidades);
     }
 
@@ -201,6 +209,24 @@
             },
             { once: true }
         );
+    }
+
+    /* =====================================================
+       TELEFONO (HABILITA LLAMADA)
+       ===================================================== */
+
+    function cargarTelefono(telefono) {
+        if (!telefono) {
+            elementos.telefono.textContent = 'No informado';
+            elementos.telefono.removeAttribute('href');
+            return;
+        }
+
+        elementos.telefono.textContent = telefono;
+
+        const numeroLimpio = telefono.replace(/\D/g, '');
+
+        elementos.telefono.href = `tel:${numeroLimpio}`;
     }
 
 
