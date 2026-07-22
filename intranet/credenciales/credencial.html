@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Verificación de Credencial | Bomberos de San Isidro</title>
+
+    <link rel="icon"
+          href="../../assets/icons/favicon.ico"
+          sizes="any">
+
+    <!-- Tipografías utilizadas en la web principal -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Yaldevi:wght@100;200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Estilos generales de la web -->
+    <link rel="stylesheet"
+          href="../../css/style.css">
+
+    <!-- Estilos específicos de la credencial -->
+    <link rel="stylesheet"
+          href="../../css/credencial.css">
+</head>
+
+<body class="credential-page">
+
+    <header class="site-header">
+
+        <!-- Barra negra de emergencias -->
+        <div class="emergency-bar">
+
+            <div>
+                <strong>EMERGENCIAS:</strong>
+
+                <a href="tel:100">
+                    100
+                </a>
+
+                /
+
+                <a href="tel:47472222">
+                    4747-2222
+                </a>
+            </div>
+
+            <div>
+                <strong>LÍNEA AUXILIAR:</strong>
+
+                <a href="tel:47478927">
+                    4747-8927
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Barra roja -->
+        <div class="red-band">
+
+            <a href="../../index.html"
+               class="mobile-title credential-site-title"
+               aria-label="Volver a la página principal">
+                <span>BOMBEROS</span>
+                <span>SAN ISIDRO</span>
+            </a>
+
+            <button class="menu-toggle"
+                    type="button"
+                    aria-label="Abrir menú"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+
+        <!-- Menú reducido -->
+        <nav class="main-nav credential-nav"
+             aria-label="Navegación de credencial">
+
+            <div class="nav-group credential-nav-group">
+
+                <a href="../../index.html">
+                    INICIO
+                </a>
+
+            </div>
+
+            <a href="../../index.html"
+               class="logo-wrap"
+               aria-label="Volver a la página principal">
+                <img src="../../assets/logo/escudo-bvsi.svg"
+                     alt="Escudo de Bomberos Voluntarios de San Isidro">
+            </a>
+
+        </nav>
+
+    </header>
+
+    <main class="credential-main">
+
+        <!-- Encabezado de la credencial -->
+        <section class="credential-heading">
+
+            <p class="credential-kicker">
+                Sociedad de Bomberos Voluntarios de San Isidro
+            </p>
+
+            <h1>
+                Verificación de credencial
+            </h1>
+
+        </section>
+
+        <!-- Credencial -->
+        <article class="credential-card"
+                 id="credencial">
+
+            <!-- Foto 4x4 -->
+            <div class="credential-photo-wrapper">
+
+                <img id="foto-integrante"
+                     class="credential-photo"
+                     src=""
+                     alt="Foto del integrante">
+
+            </div>
+
+            <!-- Insignia de jerarquía -->
+            <div class="credential-rank-image-wrapper"
+                 id="contenedor-jerarquia-imagen">
+
+                <img id="imagen-jerarquia"
+                     class="credential-rank-image"
+                     src=""
+                     alt="">
+
+            </div>
+
+            <!-- Identificación principal -->
+            <div class="credential-identity">
+
+                <h2 id="nombre-integrante"></h2>
+
+                <p class="credential-rank-name"
+                   id="jerarquia-integrante"></p>
+
+                <p class="credential-personnel-number">
+                    LP
+                    <strong id="legajo-integrante"></strong>
+                </p>
+
+                <p class="credential-station"
+                   id="dependencia-integrante"></p>
+
+            </div>
+
+            <!-- El estado se implementará más adelante -->
+            <div class="credential-status"
+                 id="estado-credencial"
+                 hidden></div>
+
+        </article>
+
+        <!-- Datos personales -->
+        <section class="credential-section">
+
+            <h2 class="credential-section-title">
+                Datos personales
+            </h2>
+
+            <dl class="credential-data-list">
+
+                <div class="credential-data-row">
+                    <dt>DNI</dt>
+                    <dd id="dni-integrante"></dd>
+                </div>
+
+                <div class="credential-data-row">
+                    <dt>Grupo sanguíneo</dt>
+                    <dd id="grupo-sanguineo-integrante"></dd>
+                </div>
+
+                <div class="credential-data-row">
+                    <dt>Domicilio</dt>
+                    <dd id="domicilio-integrante"></dd>
+                </div>
+
+                <div class="credential-data-row">
+                    <dt>Modo de transporte</dt>
+                    <dd id="transporte-integrante"></dd>
+                </div>
+
+            </dl>
+
+        </section>
+
+        <!-- Especialidades -->
+        <section class="credential-section"
+                 id="seccion-especialidades">
+            <h2 class="credential-section-title">
+                Especialidades
+            </h2>
+
+            <div class="credential-specialties"
+                 id="lista-especialidades"></div>
+
+        </section>
+
+        <section class="credential-verification-note">
+
+            <p>
+                La presente información corresponde a los registros oficiales de la
+                Sociedad de Bomberos Voluntarios de San Isidro.
+            </p>
+
+            <p>
+                La autenticidad de esta credencial puede verificarse mediante el código
+                QR impreso en la credencial física.
+            </p>
+
+        </section>
+
+    </main>
+
+
+
+    <footer class="footer">
+
+        <p>
+            Sociedad de Bomberos Voluntarios de San Isidro |
+            Todos los derechos reservados 2026 |
+            Designed and Developed by: Pyro Studios
+        </p>
+
+    </footer>
+
+    <script src="../../js/credencial.js"></script>
+
+</body>
+</html>
