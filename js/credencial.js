@@ -12,7 +12,7 @@
         jerarquia: 'Suboficial Ayudante',
         lp: '24 / 1030',
         dependencia: 'Cuartel Central',
-        estadoCredencial: 'inhabilitada',
+        estadoCredencial: 'vigente',
 
         foto: '../../assets/credenciales/fotos/LP-1030.jpg',
 
