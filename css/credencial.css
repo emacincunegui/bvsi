@@ -1,5 +1,5 @@
 /* =========================================================
-   P√ÅGINA DE VERIFICACI√ìN DE CREDENCIAL
+   P¡GINA DE VERIFICACI”N DE CREDENCIAL
    ========================================================= */
 
 .credential-page {
@@ -10,7 +10,7 @@
 
 
 /* =========================================================
-   HEADER ESPEC√çFICO
+   HEADER ESPECÕFICO
    ========================================================= */
 
 .credential-site-title {
@@ -71,7 +71,28 @@
     border-top: 5px solid var(--red);
     padding: 42px 38px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
 }
+
+    .credential-card > * {
+        position: relative;
+        z-index: 1;
+    }
+
+    .credential-card::before {
+        content: "";
+        position: absolute;
+        width: 430px;
+        height: 430px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: url("../assets/credenciales/credencial-bg.png") center/contain no-repeat;
+        opacity: 0.20;
+        pointer-events: none;
+        z-index: 0;
+    }
 
 .credential-status {
     width: fit-content;
@@ -192,7 +213,7 @@
 
 /* =========================================================
    ESTADO DE CREDENCIAL
-   Se desarrollar√° m√°s adelante
+   Se desarrollar· m·s adelante
    ========================================================= */
 
 .credential-status {
@@ -368,15 +389,15 @@
         flex-basis: calc((100% - 72px) / 4);
     }
 
-   .credential-phone {
-    color: inherit;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-    .credential-phone:hover {
-        text-decoration: underline;
+    .credential-phone {
+        color: inherit;
+        font-weight: 600;
+        text-decoration: none;
     }
+
+        .credential-phone:hover {
+            text-decoration: underline;
+        }
 }
 
 
@@ -386,6 +407,13 @@
 
 @media (max-width: 600px) {
 
+    .credential-card::before {
+        width: 320px;
+        height: 320px;
+        right: -100px;
+        opacity: 0.20;
+    }
+    
     .credential-main {
         width: min(100% - 24px, 760px);
         padding: 32px 0 52px;
@@ -488,20 +516,20 @@
             font-size: 14px;
         }
 
-   .credential-phone {
-    color: inherit;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-    .credential-phone:hover {
-        text-decoration: underline;
+    .credential-phone {
+        color: inherit;
+        font-weight: 600;
+        text-decoration: none;
     }
+
+        .credential-phone:hover {
+            text-decoration: underline;
+        }
 }
 
 
 /* =========================================================
-   CELULARES PEQUE√ëOS
+   CELULARES PEQUE—OS
    ========================================================= */
 
 @media (max-width: 380px) {
@@ -529,13 +557,13 @@
         padding-right: 16px;
     }
 
-   .credential-phone {
-    color: inherit;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-    .credential-phone:hover {
-        text-decoration: underline;
+    .credential-phone {
+        color: inherit;
+        font-weight: 600;
+        text-decoration: none;
     }
+
+        .credential-phone:hover {
+            text-decoration: underline;
+        }
 }
