@@ -8,18 +8,19 @@
        ===================================================== */
 
     const integrante = {
-        nombre: 'Emanuel Hernán Cincunegui',
-        jerarquia: 'Suboficial Ayudante',
-        lp: '24 / 1030',
-        dependencia: 'Cuartel Central',
-        estadoCredencial: 'vigente',
+        nombre: 'Apellido Nombre',
+        jerarquia: 'Jerarquia',
+        funcion: 'Cargo',
+        lp: '24 / 000',
+        dependencia: 'Dependencia', 
+        estadoCredencial: 'revision', /*Opciones: vigente, revision, inhabilitada , falta baja*/
 
-        foto: '../../assets/credenciales/fotos/LP-1030.jpg',
+        foto: '../../assets/credenciales/fotos/template.jpg',
 
         insigniaJerarquia:
-            '../../assets/credenciales/jerarquias/ayudante.png',
+            '../../assets/credenciales/jerarquias/ayudante principal.png',
 
-        dni: '40.796.274',
+        dni: '00.000.000',
         grupoSanguineo: 'A+',
         domicilio: 'Av. Santa Fe 650, Acassuso',
         transporte: 'Vehículo particular',
@@ -27,29 +28,54 @@
 
         especialidades: [
             {
-                nombre: 'Rescate Vehicular',
+                nombre: 'Rescate Acuático',
                 escudo:
-                    '../../assets/credenciales/divisiones/vehicular.png'
+                    '../../assets/credenciales/divisiones/acuatico.png'
             },
             {
-                nombre: 'USAR',
-                escudo:
-                    '../../assets/credenciales/divisiones/usar.png'
-            },
-            {
-                nombre: 'BREC',
+                nombre: 'Busqueda y Rescate en Estructuras Colapsadas',
                 escudo:
                     '../../assets/credenciales/divisiones/brec.png'
+            },
+            {
+                nombre: 'Buceo',
+                escudo:
+                    '../../assets/credenciales/divisiones/buceo.png'
             },
             {
                 nombre: 'Chofer de Vehículos de Emergencia',
                 escudo:
                     '../../assets/credenciales/divisiones/chofer.png'
             },
-                     {
+            {
                 nombre: 'Rescate con Cuerdas',
                 escudo:
                     '../../assets/credenciales/divisiones/cuerdas.png'
+            },
+            {
+                nombre: 'Brigadista Forestal',
+                escudo:
+                    '../../assets/credenciales/divisiones/forestal.png'
+            },
+            {
+                nombre: 'HAZ MAT',
+                escudo:
+                    '../../assets/credenciales/divisiones/hazmat.png'
+            },
+            {
+                nombre: 'Psicología de la Emergencia',
+                escudo:
+                    '../../assets/credenciales/divisiones/psicologia.png'
+            },
+            {
+                nombre: 'USAR (Urban Search and Rescue)',
+                escudo:
+                    '../../assets/credenciales/divisiones/usar.png'
+            },
+            {
+                nombre: 'Rescate Vehicular',
+                escudo:
+                    '../../assets/credenciales/divisiones/vehicular.png'
             }
         ]
     };
@@ -73,6 +99,12 @@
 
         jerarquia:
             document.getElementById('jerarquia-integrante'),
+
+        bloqueFuncion:
+            document.getElementById('bloque-funcion-integrante'),
+
+        funcion:
+            document.getElementById('funcion-integrante'),
 
         lp:
             document.getElementById('legajo-integrante'),
@@ -148,6 +180,7 @@
         cargarInsignia(datos);
         cargarTelefono(datos.telefono);
         cargarEspecialidades(datos.especialidades);
+        cargarFuncion(datos.funcion);
     }
 
 
@@ -209,6 +242,23 @@
             },
             { once: true }
         );
+    }
+
+    /* =====================================================
+       Funcion / Cargo
+
+      El componente que no tiene cargo no debe mostrar nada.
+       ===================================================== */
+
+    function cargarFuncion(funcion) {
+        if (!funcion || funcion.trim() === '') {
+            elementos.bloqueFuncion.hidden = true;
+            elementos.funcion.textContent = '';
+            return;
+        }
+
+        elementos.bloqueFuncion.hidden = false;
+        elementos.funcion.textContent = funcion;
     }
 
     /* =====================================================
