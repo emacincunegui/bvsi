@@ -13,7 +13,7 @@
         funcion: 'Cargo',
         lp: '24 / 000',
         dependencia: 'Dependencia', 
-        estadoCredencial: 'revision', /*Opciones: vigente, revision, inhabilitada , falta baja*/
+        estadoCredencial: 'inhabilitada', /*Opciones: vigente, revision, inhabilitada , baja*/
 
         foto: '../../assets/credenciales/fotos/template.jpg',
 
@@ -115,6 +115,12 @@
         estadoCredencial:
             document.getElementById('estado-credencial'),
 
+        mensajeBaja:
+            document.getElementById('mensaje-baja-credencial'),
+
+        seccionDatosPersonales:
+            document.getElementById('seccion-datos-personales'),
+
         dni:
             document.getElementById('dni-integrante'),
 
@@ -134,7 +140,11 @@
             document.getElementById('seccion-especialidades'),
 
         listaEspecialidades:
-            document.getElementById('lista-especialidades')
+            document.getElementById('lista-especialidades'),
+
+        notaVerificacion:
+            document.getElementById('nota-verificacion'),
+
     };
 
 
@@ -156,11 +166,6 @@
         elementos.dependencia.textContent =
             datos.dependencia || 'Dependencia no informada';
 
-        cargarEstadoCredencial(datos.estadoCredencial);
-
-        elementos.dni.textContent =
-            datos.dni || 'No informado';
-
         elementos.dni.textContent =
             datos.dni || 'No informado';
 
@@ -181,6 +186,7 @@
         cargarTelefono(datos.telefono);
         cargarEspecialidades(datos.especialidades);
         cargarFuncion(datos.funcion);
+        cargarEstadoCredencial(datos.estadoCredencial);
     }
 
 
@@ -404,6 +410,11 @@
             inhabilitada: {
                 texto: 'CREDENCIAL INHABILITADA',
                 clase: 'is-invalid'
+            },
+
+            baja: {
+                texto: 'CREDENCIAL DADA DE BAJA',
+                clase: 'is-retired'
             }
         };
 
@@ -422,8 +433,33 @@
 
         elementos.estadoCredencial.textContent =
             estadoSeleccionado.texto;
+
+        if (estado === 'baja') {
+            ocultarInformacionPersonal();
+            elementos.mensajeBaja.hidden = false;
+        } else {
+            mostrarInformacionCompleta();
+            elementos.mensajeBaja.hidden = true;
+        }
     }
 
+    function ocultarInformacionPersonal() {
+    elementos.seccionDatosPersonales.hidden = true;
+    elementos.seccionEspecialidades.hidden = true;
+    elementos.notaVerificacion.hidden = true;
+}
+
+function mostrarInformacionCompleta() {
+    elementos.seccionDatosPersonales.hidden = false;
+    elementos.notaVerificacion.hidden = false;
+
+    const tieneEspecialidades =
+        Array.isArray(integrante.especialidades) &&
+        integrante.especialidades.length > 0;
+
+    elementos.seccionEspecialidades.hidden =
+        !tieneEspecialidades;
+}
 
     cargarDatosIntegrante(integrante);
 
