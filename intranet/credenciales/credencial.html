@@ -154,6 +154,20 @@
                 <p class="credential-rank-name"
                    id="jerarquia-integrante"></p>
 
+                <!-- Función -->
+                <div id="bloque-funcion-integrante"
+                     class="credential-function-block"
+                     hidden>
+
+                    <span class="credential-function-label">
+                        FUNCIÓN
+                    </span>
+
+                    <p id="funcion-integrante"
+                       class="credential-function"></p>
+
+                </div>
+
                 <p class="credential-personnel-number">
                     LP
                     <strong id="legajo-integrante"></strong>
@@ -164,15 +178,23 @@
 
             </div>
 
-            <!-- El estado se implementará más adelante -->
             <div class="credential-status"
                  id="estado-credencial"
                  hidden></div>
 
+            <p id="mensaje-baja-credencial"
+               class="credential-retired-message"
+               hidden>
+                Esta credencial fue dada de baja por la Sociedad de Bomberos
+                Voluntarios de San Isidro y no acredita pertenencia vigente
+                a la institución.
+            </p>
+
         </article>
 
         <!-- Datos personales -->
-        <section class="credential-section">
+        <section class="credential-section"
+                    id="seccion-datos-personales">
 
             <h2 class="credential-section-title">
                 Datos personales
@@ -224,7 +246,8 @@
 
         </section>
 
-        <section class="credential-verification-note">
+        <section class="credential-verification-note"
+                  id="nota-verificacion">
 
             <p>
                 La presente información corresponde a los registros oficiales de la
