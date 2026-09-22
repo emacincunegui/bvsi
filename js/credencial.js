@@ -14,7 +14,7 @@
         chofer: true,
         lp: 'LP: 24 / 1030',
         dependencia: 'Cuartel Central', 
-        estadoCredencial: 'inhabilitada', /*Opciones: vigente, revision, inhabilitada , baja*/
+        estadoCredencial: 'vigente', /*Opciones: vigente, revision, inhabilitada , baja*/
 
         foto: '../../assets/credenciales/fotos/LP-1030.jpg',
 
