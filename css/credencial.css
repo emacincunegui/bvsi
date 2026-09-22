@@ -139,6 +139,33 @@
     border-radius: 6px;
 }
 
+.credential-driver-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 14px 0 4px;
+}
+
+    .credential-driver-badge[hidden] {
+        display: none;
+    }
+
+    .credential-driver-badge img {
+        width: 52px;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .credential-driver-badge span {
+        color: #444;
+        font-family: "Roboto Condensed", "Roboto", sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: .08em;
+        text-transform: uppercase;
+    }
+
 .credential-phone {
     color: inherit;
     font-weight: 600;
@@ -243,11 +270,10 @@
 
 /* =========================================================
    ESTADO DE CREDENCIAL
-   Se desarrollará más adelante
    ========================================================= */
 
 .credential-status {
-    margin-top: 28px;
+    margin-top: 10px;
     padding: 14px 18px;
     border: 1px solid #cccccc;
     font-size: 16px;
@@ -494,6 +520,9 @@
         height: 180px;
     }
 
+    .credential-driver-badge img {
+        width: 40px;
+    }
 
     .credential-rank-image {
         max-width: 130px;
@@ -625,4 +654,12 @@
         .credential-phone:hover {
             text-decoration: underline;
         }
+}
+
+/* =========================================================
+   ELEMENTOS OCULTOS
+   ========================================================= */
+
+[hidden] {
+    display: none !important;
 }

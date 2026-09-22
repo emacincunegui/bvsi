@@ -1,0 +1,750 @@
+/* =========================================================
+   FICHA TÉCNICA DE MÓVIL
+   Complementa credencial.css
+   ========================================================= */
+
+
+/* =========================================================
+   FOTO DEL MÓVIL
+   ========================================================= */
+
+.vehicle-photo {
+    width: min(100%, 600px);
+    height: 380px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 6px;
+}
+
+
+/* =========================================================
+   IDENTIFICACIÓN
+   ========================================================= */
+
+.vehicle-card .credential-identity h2 {
+    text-transform: uppercase;
+}
+
+.vehicle-card .credential-rank-name {
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   ESTADOS DEL MÓVIL
+   ========================================================= */
+
+/* Operativo */
+
+.credential-status.is-operational {
+    color: #16723a;
+    background-color: #e7f5ec;
+    border-color: currentColor;
+}
+
+
+/* Fuera de servicio */
+
+.credential-status.is-out-of-service {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: currentColor;
+}
+
+
+/* Baja */
+
+.credential-status.is-retired {
+    color: #555555;
+    background-color: #eeeeee;
+    border-color: #999999;
+}
+
+
+/* =========================================================
+   CELULAR
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .vehicle-photo {
+        width: 100%;
+        height: 280px;
+    }
+}
+
+
+/* =========================================================
+   CELULARES PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .vehicle-photo {
+        height: 195px;
+    }
+}
+
+/* =========================================================
+   PLANO DEL MÓVIL
+   ========================================================= */
+
+.vehicle-plan-section {
+    padding: 0;
+}
+
+
+/* BOTÓN / PESTAÑA */
+
+.vehicle-plan-toggle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 24px 34px;
+    background: #ffffff;
+    border: none;
+    color: #171717;
+    font-family: "Roboto Condensed", "Roboto", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+    /* Línea roja como los títulos */
+
+    .vehicle-plan-toggle::after {
+        content: "";
+        position: absolute;
+    }
+
+
+/* FLECHA */
+
+.vehicle-plan-arrow {
+    color: var(--red);
+    font-size: 18px;
+    transition: transform 0.25s ease;
+}
+
+
+/* Cuando está abierto */
+
+.vehicle-plan-toggle[aria-expanded="true"]
+.vehicle-plan-arrow {
+    transform: rotate(180deg);
+}
+
+
+/* CONTENIDO */
+
+.vehicle-plan-content {
+    padding: 0 34px 34px;
+}
+
+
+    .vehicle-plan-content[hidden] {
+        display: none;
+    }
+
+
+/* CADA VISTA */
+
+.vehicle-plan-view {
+    padding-top: 26px;
+    border-top: 1px solid #e2e2e2;
+}
+
+
+    .vehicle-plan-view + .vehicle-plan-view {
+        margin-top: 32px;
+    }
+
+
+    .vehicle-plan-view h3 {
+        margin: 0 0 14px;
+        color: #555555;
+        font-family: "Roboto Condensed", "Roboto", sans-serif;
+        font-size: 17px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+
+    /* IMÁGENES */
+
+    .vehicle-plan-view img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-height: 520px;
+        object-fit: contain;
+        background: #f4f4f4;
+        border: 1px solid #d4d4d4;
+        border-radius: 6px;
+    }
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .vehicle-plan-toggle {
+        padding: 20px;
+        font-size: 21px;
+    }
+
+
+    .vehicle-plan-content {
+        padding: 0 20px 24px;
+    }
+
+
+    .vehicle-plan-view {
+        padding-top: 20px;
+    }
+
+
+        .vehicle-plan-view + .vehicle-plan-view {
+            margin-top: 26px;
+        }
+}
+
+/* =========================================================
+   IMÁGENES DEL PLANO - INTERACTIVAS
+   ========================================================= */
+
+.vehicle-plan-image {
+    cursor: zoom-in;
+}
+
+
+/* =========================================================
+   LIGHTBOX
+   ========================================================= */
+
+.vehicle-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+
+    .vehicle-lightbox[hidden] {
+        display: none;
+    }
+
+
+.vehicle-lightbox-content {
+    width: 100%;
+    max-width: 1400px;
+    text-align: center;
+}
+
+
+    .vehicle-lightbox-content img {
+        display: block;
+        max-width: 100%;
+        max-height: 85vh;
+        margin: 0 auto;
+        object-fit: contain;
+        border-radius: 4px;
+    }
+
+
+    .vehicle-lightbox-content p {
+        margin: 14px 0 0;
+        color: #ffffff;
+        font-family: "Roboto Condensed", "Roboto", sans-serif;
+        font-size: 17px;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+
+/* BOTÓN CERRAR */
+
+.vehicle-lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+
+    .vehicle-lightbox-close:hover {
+        background: rgba(255, 255, 255, 0.22);
+    }
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .vehicle-lightbox {
+        padding: 18px;
+    }
+
+    .vehicle-lightbox-content img {
+        max-height: 80vh;
+    }
+
+    .vehicle-lightbox-close {
+        top: 12px;
+        right: 12px;
+        width: 44px;
+        height: 44px;
+    }
+
+    .vehicle-lightbox-content p {
+        font-size: 15px;
+    }
+}
+
+/* =========================================================
+   BOTÓN INVENTARIO
+   ========================================================= */
+
+.vehicle-inventory-wrapper {
+    padding: 28px 34px 34px;
+}
+
+.vehicle-inventory-button {
+    width: 100%;
+    padding: 16px 20px;
+    background: var(--red);
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    font-family: "Roboto Condensed", "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+    .vehicle-inventory-button:hover {
+        filter: brightness(0.92);
+    }
+
+
+/* =========================================================
+   ESTADO CLICKEABLE
+   ========================================================= */
+
+.credential-status {
+    cursor: pointer;
+}
+
+
+/* =========================================================
+   LOGIN
+   ========================================================= */
+
+.vehicle-login-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+    .vehicle-login-modal[hidden] {
+        display: none;
+    }
+
+.vehicle-login-box {
+    position: relative;
+    width: min(100%, 420px);
+    padding: 36px 30px 30px;
+    background: #ffffff;
+    border-top: 5px solid var(--red);
+}
+
+    .vehicle-login-box h2 {
+        margin: 0 0 10px;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 28px;
+        text-transform: uppercase;
+    }
+
+    .vehicle-login-box p {
+        color: #555;
+        line-height: 1.5;
+    }
+
+    .vehicle-login-box form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .vehicle-login-box label {
+        margin-top: 8px;
+        font-weight: 700;
+    }
+
+    .vehicle-login-box input {
+        width: 100%;
+        padding: 12px 14px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+.vehicle-login-submit {
+    margin-top: 18px;
+    padding: 14px 18px;
+    background: var(--red);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.vehicle-login-close {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.vehicle-login-error {
+    margin: 8px 0 0;
+    color: #a3141a !important;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   ÁREA PRIVADA
+   ========================================================= */
+
+.vehicle-private-section {
+    border-left: 5px solid var(--red);
+}
+
+.vehicle-private-block + .vehicle-private-block {
+    margin-top: 34px;
+}
+
+.vehicle-private-title {
+    margin: 0 0 18px;
+    color: #444;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HISTORIALES
+   ========================================================= */
+
+.vehicle-history {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.vehicle-history-item {
+    display: grid;
+    grid-template-columns: 120px 1fr auto;
+    gap: 16px;
+    align-items: center;
+    padding: 14px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+    .vehicle-history-item:last-child {
+        border-bottom: none;
+    }
+
+.vehicle-history-date {
+    color: #666;
+    font-weight: 600;
+}
+
+.vehicle-history-description {
+    color: #171717;
+}
+
+.vehicle-history-status {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+    .vehicle-history-status.ok {
+        color: #16723a;
+    }
+
+    .vehicle-history-status.warning {
+        color: #856404;
+    }
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .vehicle-login-box {
+        padding: 34px 20px 24px;
+    }
+
+    .vehicle-history-item {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .vehicle-inventory-wrapper {
+        padding: 24px 20px 24px;
+    }
+
+    .vehicle-inventory-button {
+        min-height: 48px;
+    }
+}
+
+/* =========================================================
+   REVISIÓN DIARIA
+   ========================================================= */
+
+.vehicle-daily-check {
+    margin-bottom: 26px;
+    border: 1px solid #d4d4d4;
+    background: #ffffff;
+}
+
+
+    .vehicle-daily-check:last-child {
+        margin-bottom: 0;
+    }
+
+
+/* CABECERA */
+
+.vehicle-daily-check-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 16px 20px;
+    background: #f2f2f2;
+    border-bottom: 2px solid #222;
+}
+
+
+    .vehicle-daily-check-header > div {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+
+.vehicle-check-label {
+    color: #555;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+
+.vehicle-daily-check-header strong {
+    font-size: 18px;
+}
+
+
+/* ESTADO GENERAL */
+
+.vehicle-check-general-status {
+    padding: 7px 11px;
+    border-radius: 4px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+    .vehicle-check-general-status.approved {
+        color: #16723a;
+        background: #e7f5ec;
+    }
+
+
+    .vehicle-check-general-status.observation {
+        color: #856404;
+        background: #fff3cd;
+    }
+
+
+    .vehicle-check-general-status.attention {
+        color: #a3141a;
+        background: #f8d7da;
+    }
+
+
+/* LISTADO */
+
+.vehicle-check-list {
+    margin: 0;
+    padding: 0 20px;
+}
+
+
+.vehicle-check-row {
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    gap: 24px;
+    padding: 13px 0;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+
+    .vehicle-check-row:last-child {
+        border-bottom: none;
+    }
+
+
+    .vehicle-check-row dt {
+        color: #555;
+        font-weight: 700;
+    }
+
+
+    .vehicle-check-row dd {
+        margin: 0;
+    }
+
+
+/* ESTADO INDIVIDUAL */
+
+.vehicle-check-value.approved {
+    color: #16723a;
+    font-weight: 700;
+}
+
+
+.vehicle-check-value.rejected {
+    color: #a3141a;
+    font-weight: 700;
+}
+
+
+.vehicle-check-value.not-checked {
+    color: #777;
+}
+
+
+/* COMBUSTIBLE */
+
+.vehicle-fuel-status {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+    .vehicle-fuel-status.observation {
+        color: #856404;
+        background: #fff3cd;
+    }
+
+
+    .vehicle-fuel-status.attention {
+        color: #a3141a;
+        background: #f8d7da;
+    }
+
+
+/* OBSERVACIONES */
+
+.vehicle-check-observations {
+    padding: 18px 20px;
+    border-top: 2px solid #222;
+    background: #f8f8f8;
+}
+
+
+    .vehicle-check-observations span {
+        display: block;
+        margin-bottom: 7px;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+
+    .vehicle-check-observations p {
+        margin: 0;
+        line-height: 1.5;
+    }
+
+
+/* CELULAR */
+
+@media (max-width: 600px) {
+
+    .vehicle-check-row {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+
+    .vehicle-check-personnel {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+
+    .vehicle-daily-check-header {
+        align-items: flex-start;
+    }
+}

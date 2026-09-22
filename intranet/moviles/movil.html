@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Ficha Técnica de Unidad | Bomberos de San Isidro</title>
+
+    <link rel="icon"
+          href="../../assets/icons/favicon.ico"
+          sizes="any">
+
+    <!-- Tipografías -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Yaldevi:wght@100;200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Estilos generales -->
+    <link rel="stylesheet"
+          href="../../css/style.css">
+
+    <!-- Reutilizamos la base de credenciales -->
+    <link rel="stylesheet"
+          href="../../css/credencial.css">
+
+    <!-- Modificaciones específicas de móviles -->
+    <link rel="stylesheet"
+          href="../../css/movil.css">
+</head>
+
+
+<body class="credential-page">
+
+    <header class="site-header">
+
+        <!-- Barra negra -->
+        <div class="emergency-bar">
+
+            <div>
+                <strong>EMERGENCIAS:</strong>
+
+                <a href="tel:100">
+                    100
+                </a>
+
+                /
+
+                <a href="tel:47472222">
+                    4747-2222
+                </a>
+            </div>
+
+            <div>
+                <strong>LÍNEA AUXILIAR:</strong>
+
+                <a href="tel:47478927">
+                    4747-8927
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- Barra roja -->
+        <div class="red-band">
+
+            <a href="../../index.html"
+               class="mobile-title credential-site-title"
+               aria-label="Volver a la página principal">
+
+                <span>BOMBEROS</span>
+                <span>SAN ISIDRO</span>
+
+            </a>
+
+            <button class="menu-toggle"
+                    type="button"
+                    aria-label="Abrir menú"
+                    aria-expanded="false">
+                ☰
+            </button>
+
+        </div>
+
+
+        <!-- Menú -->
+        <nav class="main-nav credential-nav"
+             aria-label="Navegación de ficha técnica">
+
+            <div class="nav-group credential-nav-group">
+
+                <a href="../../index.html">
+                    INICIO
+                </a>
+
+            </div>
+
+            <a href="../../index.html"
+               class="logo-wrap"
+               aria-label="Volver a la página principal">
+
+                <img src="../../assets/logo/escudo-bvsi.svg"
+                     alt="Escudo de Bomberos Voluntarios de San Isidro">
+
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main class="credential-main">
+
+
+        <!-- TÍTULO -->
+        <section class="credential-heading">
+
+            <p class="credential-kicker">
+                Sociedad de Bomberos Voluntarios de San Isidro
+            </p>
+
+            <h1>
+                Ficha técnica de unidad
+            </h1>
+
+        </section>
+
+
+        <!-- FICHA PRINCIPAL -->
+        <article class="credential-card vehicle-card"
+                 id="ficha-movil">
+
+
+            <!-- FOTO -->
+            <div class="credential-photo-wrapper">
+
+                <img id="foto-movil"
+                     class="credential-photo vehicle-photo"
+                     src=""
+                     alt="Fotografía de la unidad">
+
+            </div>
+
+
+            <!-- IDENTIFICACIÓN -->
+            <div class="credential-identity">
+
+                <h2 id="numero-movil"></h2>
+
+                <p class="credential-rank-name"
+                   id="denominacion-movil"></p>
+
+                <p class="credential-station"
+                   id="dependencia-movil"></p>
+
+            </div>
+
+
+            <!-- ESTADO -->
+            <div class="credential-status"
+                 id="estado-movil"
+                 hidden>
+            </div>
+
+        </article>
+
+
+        <!-- DATOS GENERALES -->
+        <section class="credential-section"
+                 id="seccion-datos-generales">
+
+            <h2 class="credential-section-title">
+                Datos generales
+            </h2>
+
+            <dl class="credential-data-list">
+
+                <div class="credential-data-row">
+                    <dt>Marca</dt>
+                    <dd id="marca-movil"></dd>
+                </div>
+
+                <div class="credential-data-row">
+                    <dt>Modelo</dt>
+                    <dd id="modelo-movil"></dd>
+                </div>
+
+                <div class="credential-data-row">
+                    <dt>Año</dt>
+                    <dd id="anio-movil"></dd>
+                </div>
+
+                <div class="credential-data-row">
+                    <dt>Patente</dt>
+                    <dd id="patente-movil"></dd>
+                </div>
+
+                <div class="credential-data-row">
+                    <dt>Dependencia</dt>
+                    <dd id="dependencia-datos-movil"></dd>
+                </div>
+
+                <div class="credential-data-row">
+                    <dt>Uso</dt>
+                    <dd id="uso-movil"></dd>
+                </div>
+
+                <div class="credential-data-row">
+                    <dt>Fecha de ingreso</dt>
+                    <dd id="fecha-ingreso-movil"></dd>
+                </div>
+
+            </dl>
+
+        </section>
+
+
+        <!-- DATOS TÉCNICOS -->
+        <section class="credential-section"
+                 id="seccion-datos-tecnicos">
+
+            <h2 class="credential-section-title">
+                Datos técnicos
+            </h2>
+
+            <dl class="credential-data-list">
+
+                <div class="credential-data-row">
+                    <dt>Tipo de combustible</dt>
+                    <dd id="combustible-movil"></dd>
+                </div>
+
+                <div class="credential-data-row"
+                     id="fila-capacidad-agua">
+
+                    <dt>Capacidad de agua</dt>
+                    <dd id="capacidad-agua-movil"></dd>
+
+                </div>
+
+                <div class="credential-data-row">
+                    <dt>Capacidad de personal</dt>
+                    <dd id="capacidad-personal-movil"></dd>
+                </div>
+
+            </dl>
+
+        </section>
+
+
+        <!-- DIMENSIONES -->
+        <section class="credential-section"
+                 id="seccion-dimensiones">
+
+            <h2 class="credential-section-title">
+                Dimensiones
+            </h2>
+
+            <dl class="credential-data-list">
+
+                <div class="credential-data-row">
+                    <dt>Largo</dt>
+                    <dd id="largo-movil"></dd>
+                </div>
+
+                <div class="credential-data-row">
+                    <dt>Ancho</dt>
+                    <dd id="ancho-movil"></dd>
+                </div>
+
+                <div class="credential-data-row">
+                    <dt>Alto</dt>
+                    <dd id="alto-movil"></dd>
+                </div>
+
+            </dl>
+
+        </section>
+
+        <!-- PLANO DEL MÓVIL -->
+        <section class="credential-section vehicle-plan-section">
+
+            <button class="vehicle-plan-toggle"
+                    id="plano-toggle"
+                    type="button"
+                    aria-expanded="false"
+                    aria-controls="plano-contenido">
+
+                <span>PLANO</span>
+
+                <span class="vehicle-plan-arrow"
+                      aria-hidden="true">
+                    ▼
+                </span>
+
+            </button>
+
+
+            <div class="vehicle-plan-content"
+                 id="plano-contenido"
+                 hidden>
+
+
+                <!-- LADO IZQUIERDO -->
+                <article class="vehicle-plan-view">
+
+                    <h3>
+                        Lado Conductor
+                    </h3>
+
+                    <img src="../../assets/moviles/planos/m-51/movil-51-izq.jpg"
+                         class="vehicle-plan-image"
+                         alt="Vista del lado conductor del Móvil 51"
+                         loading="lazy">
+
+                </article>
+
+
+                <!-- LADO DERECHO -->
+                <article class="vehicle-plan-view">
+
+                    <h3>
+                        Lado Acompañante
+                    </h3>
+
+                    <img src="../../assets/moviles/planos/m-51/movil-51-der.jpg"
+                         class="vehicle-plan-image"
+                         alt="Vista del lado acompañante del Móvil 51"
+                         loading="lazy">
+
+                </article>
+
+
+                <!-- PARTE TRASERA / BOMBA -->
+                <article class="vehicle-plan-view">
+
+                    <h3>
+                        Parte trasera / Bomba
+                    </h3>
+
+                    <img src="../../assets/moviles/planos/m-51/movil-51-bomba.jpg"
+                         class="vehicle-plan-image"
+                         alt="Vista trasera y bomba del Móvil 51"
+                         loading="lazy">
+
+                </article>
+
+                <div class="vehicle-inventory-wrapper">
+
+                    <button class="vehicle-inventory-button"
+                            id="inventario-button"
+                            type="button">
+                        INVENTARIO
+                    </button>
+
+                </div>
+
+
+            </div>
+
+            <!-- VISOR DE IMÁGENES -->
+            <div class="vehicle-lightbox"
+                 id="vehicle-lightbox"
+                 hidden>
+
+                <button class="vehicle-lightbox-close"
+                        id="vehicle-lightbox-close"
+                        type="button"
+                        aria-label="Cerrar imagen">
+                    ✕
+                </button>
+
+                <div class="vehicle-lightbox-content">
+
+                    <img id="vehicle-lightbox-image"
+                         src=""
+                         alt="Vista ampliada del móvil">
+
+                    <p id="vehicle-lightbox-caption"></p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ÁREA PRIVADA DEL MÓVIL -->
+        <section class="credential-section vehicle-private-section"
+                 id="seccion-privada"
+                 hidden>
+
+            <h2 class="credential-section-title">
+                Ficha interna del móvil
+            </h2>
+
+
+            <!-- DATOS COMPLETOS -->
+            <div class="vehicle-private-block">
+
+                <h3 class="vehicle-private-title">
+                    Datos completos
+                </h3>
+
+                <dl class="credential-data-list">
+
+                    <div class="credential-data-row">
+                        <dt>Nº Chasis</dt>
+                        <dd id="privado-numero-chasis"></dd>
+                    </div>
+
+                    <div class="credential-data-row">
+                        <dt>Nº Motor</dt>
+                        <dd id="privado-numero-motor"></dd>
+                    </div>
+
+                    <div class="credential-data-row">
+                        <dt>VTV</dt>
+                        <dd id="privado-vtv"></dd>
+                    </div>
+
+                    <div class="credential-data-row">
+                        <dt>Aceite / Filtros</dt>
+                        <dd id="privado-aceite-filtros"></dd>
+                    </div>
+
+                    <div class="credential-data-row">
+                        <dt>Aceite</dt>
+                        <dd id="privado-aceite"></dd>
+                    </div>
+
+                    <div class="credential-data-row">
+                        <dt>Batería</dt>
+                        <dd id="privado-bateria"></dd>
+                    </div>
+
+                    <div class="credential-data-row">
+                        <dt>Radio VHF</dt>
+                        <dd id="privado-radio-vhf"></dd>
+                    </div>
+
+                    <div class="credential-data-row">
+                        <dt>Aceite hidráulico</dt>
+                        <dd id="privado-aceite-hidraulico"></dd>
+                    </div>
+
+                    <div class="credential-data-row">
+                        <dt>Correa motor</dt>
+                        <dd id="privado-correa-motor"></dd>
+                    </div>
+
+                    <div class="credential-data-row">
+                        <dt>Correa de distribución</dt>
+                        <dd id="privado-correa-distribucion"></dd>
+                    </div>
+
+                    <div class="credential-data-row">
+                        <dt>Filtro de aire</dt>
+                        <dd id="privado-filtro-aire"></dd>
+                    </div>
+
+                    <div class="credential-data-row">
+                        <dt>Filtro compresor</dt>
+                        <dd id="privado-filtro-compresor"></dd>
+                    </div>
+
+                    <div class="credential-data-row">
+                        <dt>Filtro combustible</dt>
+                        <dd id="privado-filtro-combustible"></dd>
+                    </div>
+
+                    <div class="credential-data-row">
+                        <dt>Filtro secado de aire</dt>
+                        <dd id="privado-filtro-secado-aire"></dd>
+                    </div>
+
+                    <div class="credential-data-row">
+                        <dt>Filtro trampa</dt>
+                        <dd id="privado-filtro-trampa"></dd>
+                    </div>
+
+                    <div class="credential-data-row">
+                        <dt>Filtro aceite</dt>
+                        <dd id="privado-filtro-aceite"></dd>
+                    </div>
+
+                    <div class="credential-data-row">
+                        <dt>Filtro hidráulico</dt>
+                        <dd id="privado-filtro-hidraulico"></dd>
+                    </div>
+
+                    <div class="credential-data-row">
+                        <dt>Cubiertas</dt>
+                        <dd id="privado-cubiertas"></dd>
+                    </div>
+
+                </dl>
+
+            </div>
+
+
+            <!-- HISTORIAL DE CONTROLES -->
+            <div class="vehicle-private-block">
+
+                <h3 class="vehicle-private-title">
+                    Historial de controles
+                </h3>
+
+                <div class="vehicle-history"
+                     id="historial-controles">
+                </div>
+
+            </div>
+
+
+            <!-- ÚLTIMOS TRABAJOS -->
+            <div class="vehicle-private-block">
+
+                <h3 class="vehicle-private-title">
+                    Últimos trabajos
+                </h3>
+
+                <div class="vehicle-history"
+                     id="historial-trabajos">
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- LOGIN ÁREA PRIVADA -->
+        <div class="vehicle-login-modal"
+             id="vehicle-login-modal"
+             hidden>
+
+            <div class="vehicle-login-box">
+
+                <button class="vehicle-login-close"
+                        id="vehicle-login-close"
+                        type="button"
+                        aria-label="Cerrar">
+                    ✕
+                </button>
+
+                <h2>
+                    Acceso interno
+                </h2>
+
+                <p>
+                    Ingresá tus credenciales para ver la información interna del móvil.
+                </p>
+
+                <form id="vehicle-login-form">
+
+                    <label for="vehicle-user">
+                        Usuario
+                    </label>
+
+                    <input id="vehicle-user"
+                           type="text"
+                           autocomplete="username"
+                           required>
+
+
+                    <label for="vehicle-password">
+                        Contraseña
+                    </label>
+
+                    <input id="vehicle-password"
+                           type="password"
+                           autocomplete="current-password"
+                           required>
+
+
+                    <p class="vehicle-login-error"
+                       id="vehicle-login-error"
+                       hidden>
+                        Usuario o contraseña incorrectos.
+                    </p>
+
+
+                    <button type="submit"
+                            class="vehicle-login-submit">
+                        INGRESAR
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- LEYENDA -->
+        <section class="credential-verification-note"
+                 id="nota-verificacion">
+
+            <p>
+                La presente información corresponde a los registros oficiales de la
+                Sociedad de Bomberos Voluntarios de San Isidro.
+            </p>
+
+            <p>
+                La autenticidad de esta ficha puede verificarse mediante el código
+                QR asignado a la unidad.
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <footer class="footer">
+
+        <p>
+            Sociedad de Bomberos Voluntarios de San Isidro |
+            Todos los derechos reservados 2026 |
+            Designed and Developed by: Pyro Studios
+        </p>
+
+    </footer>
+
+
+    <script src="../../js/movil.js"></script>
+
+</body>
+
+</html>

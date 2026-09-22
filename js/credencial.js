@@ -8,51 +8,47 @@
        ===================================================== */
 
     const integrante = {
-        nombre: 'Apellido Nombre',
-        jerarquia: 'Jerarquia',
-        funcion: 'Cargo',
-        lp: '24 / 000',
-        dependencia: 'Dependencia', 
+        nombre: 'Cincunegui Emanuel',
+        jerarquia: 'Ayudante',
+        funcion: '',
+        chofer: true,
+        lp: 'LP: 24 / 1030',
+        dependencia: 'Cuartel Central', 
         estadoCredencial: 'inhabilitada', /*Opciones: vigente, revision, inhabilitada , baja*/
 
-        foto: '../../assets/credenciales/fotos/template.jpg',
+        foto: '../../assets/credenciales/fotos/LP-1030.jpg',
 
         insigniaJerarquia:
-            '../../assets/credenciales/jerarquias/ayudante principal.png',
+            '../../assets/credenciales/jerarquias/ayudante.png',
 
-        dni: '00.000.000',
+        dni: '40.796.274',
         grupoSanguineo: 'A+',
-        domicilio: 'Av. Santa Fe 650, Acassuso',
+        domicilio: 'Gral. Guido 712, Beccar',
         transporte: 'Vehículo particular',
         telefono: '11 4747-8927',
 
         especialidades: [
-            {
+            /*{
                 nombre: 'Rescate Acuático',
                 escudo:
                     '../../assets/credenciales/divisiones/acuatico.png'
-            },
+            },*/
             {
                 nombre: 'Busqueda y Rescate en Estructuras Colapsadas',
                 escudo:
                     '../../assets/credenciales/divisiones/brec.png'
             },
-            {
+            /*{
                 nombre: 'Buceo',
                 escudo:
                     '../../assets/credenciales/divisiones/buceo.png'
-            },
-            {
-                nombre: 'Chofer de Vehículos de Emergencia',
-                escudo:
-                    '../../assets/credenciales/divisiones/chofer.png'
-            },
+            },*/
             {
                 nombre: 'Rescate con Cuerdas',
                 escudo:
                     '../../assets/credenciales/divisiones/cuerdas.png'
             },
-            {
+            /*{
                 nombre: 'Brigadista Forestal',
                 escudo:
                     '../../assets/credenciales/divisiones/forestal.png'
@@ -67,6 +63,8 @@
                 escudo:
                     '../../assets/credenciales/divisiones/psicologia.png'
             },
+            */
+
             {
                 nombre: 'USAR (Urban Search and Rescue)',
                 escudo:
@@ -106,6 +104,9 @@
         funcion:
             document.getElementById('funcion-integrante'),
 
+        distintivoChofer:
+            document.getElementById('distintivo-chofer'),
+
         lp:
             document.getElementById('legajo-integrante'),
 
@@ -144,6 +145,9 @@
 
         notaVerificacion:
             document.getElementById('nota-verificacion'),
+
+        numeroPersonal:
+            document.querySelector('.credential-personnel-number'),
 
     };
 
@@ -186,7 +190,10 @@
         cargarTelefono(datos.telefono);
         cargarEspecialidades(datos.especialidades);
         cargarFuncion(datos.funcion);
+        cargarDistintivoChofer(datos.chofer);
         cargarEstadoCredencial(datos.estadoCredencial);
+        
+        
     }
 
 
@@ -248,6 +255,16 @@
             },
             { once: true }
         );
+    }
+
+    /* =====================================================
+       Chofer
+
+      El componente que no es chofer de pesado no debe mostrar nada.
+       ===================================================== */
+
+    function cargarDistintivoChofer(esChofer) {
+        elementos.distintivoChofer.hidden = !esChofer;
     }
 
     /* =====================================================
@@ -444,14 +461,27 @@
     }
 
     function ocultarInformacionPersonal() {
-    elementos.seccionDatosPersonales.hidden = true;
-    elementos.seccionEspecialidades.hidden = true;
-    elementos.notaVerificacion.hidden = true;
+        elementos.jerarquia.hidden = true;
+        elementos.insignia.hidden = true;
+        elementos.bloqueFuncion.hidden = true;
+        elementos.lp.hidden = true;
+        elementos.dependencia.hidden = true;
+        elementos.distintivoChofer.hidden = true;
+        elementos.seccionDatosPersonales.hidden = true;
+        elementos.seccionEspecialidades.hidden = true;
+        elementos.notaVerificacion.hidden = true;
+
 }
 
 function mostrarInformacionCompleta() {
     elementos.seccionDatosPersonales.hidden = false;
     elementos.notaVerificacion.hidden = false;
+    elementos.jerarquia.hidden = false;
+    elementos.insignia.hidden = false;
+    elementos.lp.hidden = false;
+    elementos.dependencia.hidden = false;
+    cargarFuncion(integrante.funcion);
+    cargarDistintivoChofer(integrante.chofer);
 
     const tieneEspecialidades =
         Array.isArray(integrante.especialidades) &&
