@@ -69,7 +69,7 @@
             'operativo',
 
         foto:
-            '../../assets/moviles/fotos/51.jpg',
+            '../../assets/Moviles/Fotos/51.jpg',
 
         privado: {
 
