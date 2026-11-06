@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bomberos San Isidro - Cuarteles</title>
+    <title>Bomberos San Isidro - Cuartel Central</title>
 
     <link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,10 +33,12 @@
       </div>
 
       <div class="red-band">
-          <div class="mobile-title"> <a href="../index.html"</a>
+          <a class="mobile-title"
+             href="../index.html"
+             aria-label="Volver a la página principal">
               <span>BOMBEROS</span>
               <span>SAN ISIDRO</span>
-          </div>
+          </a>
           <button class="menu-toggle" aria-label="Abrir menú">☰</button>
       </div>
 
@@ -163,83 +165,250 @@
           </div>
       </section>
 
-      <section class="station-features section-padding gray-section">
+
+      <!-- PERSONAL DE LA DEPENDENCIA -->
+      <section class="station-staff section-padding gray-section">
           <div class="container">
 
               <div class="section-header">
-                  <span class="section-label">Instalaciones</span>
-                  <h2>Áreas del Cuartel</h2>
-                  <p>Espacios destinados a la respuesta operativa, capacitación y administración institucional.</p>
+                  <span class="section-label">Personal</span>
+                  <h2>Dotación del Cuartel Central</h2>
+                  <p>Responsable de la dependencia y distribución del personal asignado.</p>
               </div>
 
-              <div class="features-grid">
-                  <article class="feature-card">
-                      <h3>Guardia operativa</h3>
-                      <p>Área destinada al personal de guardia y recepción de emergencias.</p>
+              <!-- JEFATURA DEL CUERPO -->
+              <div class="station-leadership-grid">
+
+                  <!-- JEFE DE CUERPO -->
+                  <article class="station-manager-card">
+
+                      <div>
+                          <p class="station-manager-label">
+                              Jefe de Cuerpo
+                          </p>
+
+                          <p class="station-manager-rank">
+                              Comandante General
+                          </p>
+
+                          <h3 class="station-manager-name">
+                              Gallego Daniel
+                          </h3>
+
+                      </div>
                   </article>
 
-                  <article class="feature-card">
-                      <h3>Sala de comunicaciones</h3>
-                      <p>Coordinación radial y telefónica de los servicios de emergencia.</p>
-                  </article>
+                  <!-- SEGUNDO JEFE DE CUERPO -->
+                  <article class="station-manager-card">
 
-                  <article class="feature-card">
-                      <h3>Playa de móviles</h3>
-                      <p>Sector de estacionamiento y salida rápida de unidades operativas.</p>
-                  </article>
+                      <div>
+                          <p class="station-manager-label">
+                              2do Jefe de Cuerpo
+                          </p>
 
-                  <article class="feature-card">
-                      <h3>Aula de capacitación</h3>
-                      <p>Espacio para formación interna, cursos y actividades institucionales.</p>
-                  </article>
+                          <p class="station-manager-rank">
+                              Comandante Mayor
+                          </p>
 
-                  <article class="feature-card">
-                      <h3>Taller y mantenimiento</h3>
-                      <p>Área de control, reparación y mantenimiento preventivo de móviles y materiales.</p>
-                  </article>
-
-                  <article class="feature-card">
-                      <h3>Administración</h3>
-                      <p>Gestión institucional, documentación y atención administrativa.</p>
+                          <h3 class="station-manager-name">
+                              Durante Gustavo
+                          </h3>
+                      </div>
                   </article>
               </div>
 
+              <div class="station-staff-grid">
+
+                  <!-- ENCARGADOS DE LA DEPENDENCIA -->
+                  <div class="station-managers">
+
+                      <!-- ENCARGADO -->
+                      <article class="station-manager-card">
+                          <div>
+                              <p class="station-manager-label">
+                                  Encargado del Cuartel Central
+                              </p>
+
+                              <p class="station-manager-rank">
+                                  Comandante
+                              </p>
+
+                              <h3 class="station-manager-name">
+                                  Cincunegui Esteban
+                              </h3>
+                          </div>
+                      </article>
+
+                      <!-- SUBENCARGADO - HABILITAR SI CORRESPONDE
+
+                        <article class="station-manager-card">
+                            <div>
+                                <p class="station-manager-label">
+                                    Subencargado de la Dependencia
+                                </p>
+
+                                <p class="station-manager-rank">
+                                    Jerarquía
+                                </p>
+
+                                <h3 class="station-manager-name">
+                                    Nombre y apellido
+                                </h3>
+                            </div>
+                        </article>
+                        -->
+
+                  </div>
+
+                  <!-- PERSONAL ASIGNADO -->
+                  <div class="station-personnel-panel">
+                      <h3>Personal asignado</h3>
+
+                      <div class="station-personnel-grid">
+
+                          <article class="station-personnel-item">
+                              <span class="station-personnel-value">10</span>
+                              <h4>Oficiales</h4>
+                          </article>
+
+                          <article class="station-personnel-item">
+                              <span class="station-personnel-value">20</span>
+                              <h4>Suboficiales</h4>
+                          </article>
+
+                          <article class="station-personnel-item">
+                              <span class="station-personnel-value">30</span>
+                              <h4>Bomberos</h4>
+                          </article>
+
+                      </div>
+
+                      <p class="station-personnel-note">
+                          Actualizado: 01/11/2026
+                      </p>
+                  </div>
+
+              </div>
           </div>
       </section>
 
+
+
+      <!-- MOVILES ASIGNADOS -->
       <section class="station-units section-padding">
           <div class="container">
 
               <div class="section-header">
                   <span class="section-label">Unidades</span>
                   <h2>Móviles asignados</h2>
-                  <p>Unidades operativas disponibles en el Cuartel Central.</p>
+                  <p>Unidades operativas asignadas al Cuartel Central.</p>
               </div>
 
-              <div class="units-grid">
-                  <article class="unit-card">
-                      <h3>Autobombas</h3>
-                      <p>Unidades de primera intervención para incendios y rescates.</p>
+              <div class="station-mobile-grid">
+
+                  <!-- MOVIL 66 -->
+                  <article class="station-mobile-card">
+                      <h3>MÓVIL 66</h3>
+                      <p class="station-mobile-type">
+                          Autobomba de Primera Intervención
+                      </p>
+                      <p class="station-mobile-model">
+                          SCANIA P94
+                      </p>
                   </article>
 
-                  <article class="unit-card">
-                      <h3>Cisternas</h3>
-                      <p>Unidades de abastecimiento de agua para apoyo operativo.</p>
+                  <!-- MOVIL 71 -->
+                  <article class="station-mobile-card">
+                      <h3>MÓVIL 71</h3>
+                      <p class="station-mobile-type">
+                          Autobomba de primera intervención
+                      </p>
+                      <p class="station-mobile-model">
+                          SCANIA P94
+                      </p>
                   </article>
 
-                  <article class="unit-card">
-                      <h3>Unidades especiales</h3>
-                      <p>Vehículos destinados a rescates, logística y servicios técnicos.</p>
+                  <!-- MOVIL 64 -->
+                  <article class="station-mobile-card">
+                      <h3>MÓVIL 64</h3>
+                      <p class="station-mobile-type">
+                          Transporte de personal con módulo comando
+                      </p>
+                      <p class="station-mobile-model">
+                          MERCEDES BENZ VITO
+                      </p>
                   </article>
 
-                  <article class="unit-card">
-                      <h3>Unidades livianas</h3>
-                      <p>Móviles de apoyo, traslado de personal y respuesta rápida.</p>
+                  <!-- MOVIL 41 -->
+                  <article class="station-mobile-card">
+                      <h3>MÓVIL 41</h3>
+                      <p class="station-mobile-type">
+                          Móvil de rescate pesado
+                      </p>
+                      <p class="station-mobile-model">
+                          VOLVO FL614
+                      </p>
                   </article>
+
+                  <!-- MOVIL 63 -->
+                  <article class="station-mobile-card">
+                      <h3>MÓVIL 63</h3>
+                      <p class="station-mobile-type">
+                          Cisterna de 13.000 litros
+                      </p>
+                      <p class="station-mobile-model">
+                          MERCEDES BENZ ACTROS
+                      </p>
+                  </article>
+
+                  <!-- MOVIL 67 -->
+                  <article class="station-mobile-card">
+                      <h3>MÓVIL 67</h3>
+                      <p class="station-mobile-type">
+                          Móvil de apoyo logístico
+                      </p>
+                      <p class="station-mobile-model">
+                          FORD RANGER
+                      </p>
+                  </article>
+
+                  <!-- MOVIL 68 -->
+                  <article class="station-mobile-card">
+                      <h3>MÓVIL 68</h3>
+                      <p class="station-mobile-type">
+                          Móvil de apoyo logístico
+                      </p>
+                      <p class="station-mobile-model">
+                          RENAULT KANGOO
+                      </p>
+                  </article>
+
+                  <!-- MOVIL 60 -->
+                  <article class="station-mobile-card">
+                      <h3>MÓVIL 60</h3>
+                      <p class="station-mobile-type">
+                          Móvil de Jefatura
+                      </p>
+                      <p class="station-mobile-model">
+                          VOLKSWAGEN TIGUAN 2.0 TDI
+                      </p>
+                  </article>
+
+                  <!-- MOVIL 52 -->
+                  <article class="station-mobile-card">
+                      <h3>MÓVIL 52</h3>
+                      <p class="station-mobile-type">
+                          Hidroelevador
+                      </p>
+                      <p class="station-mobile-model">
+                          MAN TGA 26-310
+                      </p>
+                  </article>
+
               </div>
-
           </div>
       </section>
+
 
       <section class="station-map section-padding gray-section">
           <div class="container">

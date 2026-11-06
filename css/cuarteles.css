@@ -1,37 +1,57 @@
-/* ============================= */
-/* CUARTELES */
-/* ============================= */
+
+/* ========================================== */
+/* BVSI - PAGINAS DE CUARTELES                 */
+/* ========================================== */
+
+/* VARIABLES */
 
 .station-page {
+    --station-red: var(--red, #c40f17);
+    --station-dark: #171717;
+    --station-gray: #f4f4f4;
+    --station-shadow: 0 12px 28px rgba(0, 0, 0, .08);
     background: #fff;
 }
 
-.station-hero {
-    position: relative;
-    min-height: 520px;
-    overflow: hidden;
-    display: flex;
-    align-items: flex-end;
-}
+    /* ========================================== */
+    /* GALERIA PRINCIPAL                           */
+    /* ========================================== */
 
-.gallery-slide {
+    .station-page .station-hero.hero-gallery {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        height: 450px;
+        min-height: 0;
+        overflow: hidden;
+        background: #111;
+    }
+
+/* IMAGENES */
+
+.station-hero .gallery-slide {
     position: absolute;
     inset: 0;
     opacity: 0;
     transition: opacity 1s ease;
 }
 
-    .gallery-slide.active {
+    .station-hero .gallery-slide.active {
         opacity: 1;
     }
 
-    .gallery-slide img {
+    .station-hero .gallery-slide img {
+        display: block;
         width: 100%;
-        height: 120%;
+        height: calc(100% + 160px);
+        margin-top: -80px;
         object-fit: cover;
         object-position: center;
         transform: translateY(0);
     }
+
+/* SUPERPOSICION OSCURA */
 
 .station-hero-overlay {
     position: absolute;
@@ -40,73 +60,111 @@
     background: linear-gradient( to top, rgba(0, 0, 0, .78), rgba(0, 0, 0, .15) );
 }
 
+/* CONTENIDO DE LA GALERIA */
+
 .station-hero-content {
     position: relative;
     z-index: 2;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 24px 80px;
+    padding: 0 24px 70px;
     color: #fff;
 }
 
 .breadcrumb {
+    margin: 0 0 14px;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    margin-bottom: 14px;
     opacity: .85;
 }
 
 .station-hero h1 {
-    font-size: clamp(42px, 6vw, 72px);
+    margin: 0 0 12px;
+    font-size: clamp(36px, 5vw, 64px);
+    line-height: 1.1;
     text-transform: uppercase;
     letter-spacing: 2px;
-    margin-bottom: 12px;
 }
 
 .station-hero-content > p:last-child {
     max-width: 720px;
+    margin: 0;
     font-size: 18px;
     line-height: 1.5;
 }
 
-.gallery-dots {
+/* INDICADORES DE GALERIA */
+
+.station-hero .gallery-dots {
     position: absolute;
     z-index: 3;
-    bottom: 32px;
+    bottom: 24px;
     left: 50%;
-    transform: translateX(-50%);
     display: flex;
     gap: 10px;
+    transform: translateX(-50%);
 }
 
-.dot {
+.station-hero .dot {
     width: 11px;
     height: 11px;
-    border-radius: 50%;
+    padding: 0;
     border: 1px solid #fff;
+    border-radius: 50%;
     background: transparent;
     cursor: pointer;
-    padding: 0;
 }
 
-    .dot.active {
+    .station-hero .dot.active {
         background: #fff;
     }
 
-.section-padding {
+/* ========================================== */
+/* ESTILOS GENERALES                           */
+/* ========================================== */
+
+.station-page .section-padding {
     padding: 80px 24px;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.gray-section {
+    background: var(--station-gray);
 }
 
-.gray-section {
-    background: #f4f4f4;
+.section-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--station-red);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
+
+.station-info-text h2,
+.section-header h2 {
+    margin: 0 0 20px;
+    font-size: 38px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.station-info-text p,
+.section-header p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.section-header {
+    max-width: 760px;
+    margin-bottom: 42px;
+}
+
+/* ========================================== */
+/* INFORMACION INSTITUCIONAL                   */
+/* ========================================== */
 
 .station-info-grid {
     display: grid;
@@ -115,52 +173,27 @@
     align-items: start;
 }
 
-.section-label {
-    display: inline-block;
-    color: #c40000;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 12px;
-}
-
-.station-info-text h2,
-.section-header h2 {
-    font-size: 38px;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-}
-
-.station-info-text p,
-.section-header p,
-.feature-card p,
-.unit-card p {
-    color: #555;
-    line-height: 1.6;
-}
-
 .station-data-card {
+    padding: 32px;
     background: #111;
     color: #fff;
-    padding: 32px;
 }
 
     .station-data-card h3 {
+        margin: 0 0 20px;
         font-size: 24px;
-        margin-bottom: 20px;
         text-transform: uppercase;
     }
 
     .station-data-card ul {
-        list-style: none;
-        padding: 0;
         margin: 0;
+        padding: 0;
+        list-style: none;
     }
 
     .station-data-card li {
         padding: 12px 0;
-        border-bottom: 1px solid rgba(255,255,255,.15);
+        border-bottom: 1px solid rgba(255, 255, 255, .15);
         line-height: 1.5;
     }
 
@@ -168,59 +201,282 @@
             border-bottom: none;
         }
 
-.section-header {
-    max-width: 760px;
-    margin-bottom: 42px;
-}
+/* ========================================== */
+/* JEFATURA DEL CUERPO                         */
+/* ========================================== */
 
-.features-grid,
-.units-grid {
+.station-leadership-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 24px;
+    margin-bottom: 24px;
 }
 
-.feature-card,
-.unit-card {
-    background: #fff;
-    padding: 30px;
-    border-top: 4px solid #c40000;
-    box-shadow: 0 12px 28px rgba(0,0,0,.08);
+/* ========================================== */
+/* PERSONAL DE LA DEPENDENCIA                  */
+/* ========================================== */
+
+.station-staff-grid {
+    display: grid;
+    grid-template-columns: minmax(260px, .85fr) minmax(0, 1.5fr);
+    gap: 24px;
+    align-items: stretch;
 }
 
-    .feature-card h3,
-    .unit-card h3 {
-        font-size: 20px;
-        text-transform: uppercase;
-        margin-bottom: 12px;
+/* TARJETAS PRINCIPALES */
+
+.station-manager-card,
+.station-personnel-panel {
+    min-width: 0;
+    padding: 34px;
+    border-top: 4px solid var(--station-red);
+    box-shadow: var(--station-shadow);
+}
+
+/* JEFES, ENCARGADO Y SUBENCARGADO */
+
+.station-manager-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--station-dark);
+    color: #fff;
+}
+
+.station-manager-label {
+    margin: 0 0 14px;
+    color: #d3d3d3;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.station-manager-rank {
+    margin: 0;
+    color: #cfcfcf;
+    font-size: 15px;
+}
+
+.station-manager-name {
+    margin: 0 0 10px;
+    font-size: clamp(23px, 2.5vw, 30px);
+    line-height: 1.2;
+}
+
+/* ENCARGADO Y SUBENCARGADO OPCIONAL */
+
+.station-managers {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    min-width: 0;
+}
+
+    .station-managers > .station-manager-card {
+        flex: 1;
     }
+
+/* PERSONAL ASIGNADO */
+
+
+/* PANEL DE PERSONAL */
+
+.station-personnel-panel {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+}
+
+
+    /* TITULO SIEMPRE ARRIBA */
+
+    .station-personnel-panel > h3 {
+        margin: 0 0 24px;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+
+/* CONTENIDO CENTRADO VERTICALMENTE */
+
+.station-personnel-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+/* INDICADORES */
+
+.station-personnel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    margin: 0;
+}
+
+/* FECHA */
+
+.station-personnel-note {
+    margin: 16px 0 0;
+    color: #777;
+    font-size: 13px;
+}
+
+.station-personnel-item {
+    min-width: 0;
+    padding: 23px 10px;
+    background: #f7f7f7;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+}
+
+.station-personnel-value {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--station-red);
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+}
+
+.station-personnel-item h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    overflow-wrap: anywhere;
+}
+
+.station-personnel-note {
+    margin: 16px 0 0;
+    color: #777;
+    font-size: 13px;
+}
+
+/* ========================================== */
+/* MOVILES ASIGNADOS                           */
+/* ========================================== */
+
+.station-mobile-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+}
+
+/* TARJETAS */
+
+.station-mobile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    min-height: 170px;
+    padding: 22px 16px;
+    background: var(--station-dark);
+    color: #fff;
+    border-top: 4px solid var(--station-red);
+    box-shadow: var(--station-shadow);
+    text-align: center;
+    transition: transform .25s ease, box-shadow .25s ease;
+    flex: 0 0 calc((100% - 54px) / 4);
+}
+
+    .station-mobile-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 16px 32px rgba(0, 0, 0, .16);
+    }
+
+    /* NUMERO DEL MOVIL */
+
+    .station-mobile-card h3 {
+        margin: 0 0 12px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 900;
+        line-height: 1.1;
+    }
+
+/* TIPO DE MOVIL */
+
+.station-mobile-type {
+    margin: 0 0 10px;
+    color: #e0e0e0;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+/* MODELO */
+
+.station-mobile-model {
+    margin: 0;
+    color: #bdbdbd;
+    font-size: 13px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+}
+
+/* ========================================== */
+/* UBICACION                                   */
+/* ========================================== */
 
 .map-box {
     width: 100%;
     height: 420px;
     overflow: hidden;
-    box-shadow: 0 12px 28px rgba(0,0,0,.12);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .12);
 }
 
     .map-box iframe {
+        display: block;
         width: 100%;
         height: 100%;
         border: 0;
     }
 
+/* ========================================== */
+/* RESPONSIVE - TABLETS                        */
+/* ========================================== */
+
 @media (max-width: 900px) {
-    .station-hero {
-        min-height: 420px;
+
+    /* GALERIA */
+
+    .station-page .station-hero.hero-gallery {
+        height: 350px;
+    }
+
+    .station-hero-content {
+        padding: 0 20px 60px;
+    }
+
+    .station-hero h1 {
+        font-size: clamp(32px, 5vw, 48px);
+    }
+
+    .station-hero-content > p:last-child {
+        font-size: 16px;
+    }
+
+    /* SECCIONES */
+
+    .station-page .section-padding {
+        padding: 60px 20px;
     }
 
     .station-info-grid,
-    .features-grid,
-    .units-grid {
+    .station-leadership-grid,
+    .station-staff-grid {
         grid-template-columns: 1fr;
     }
 
-    .section-padding {
-        padding: 60px 20px;
+    .station-info-grid {
+        gap: 30px;
     }
 
     .station-info-text h2,
@@ -228,15 +484,155 @@
         font-size: 30px;
     }
 
-    .station-hero-content {
-        padding: 0 20px 76px;
+    /* MOVILES */
+
+    .station-mobile-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-        .station-hero-content > p:last-child {
-            font-size: 16px;
-        }
+    .station-mobile-card{
+        flex-basis: calc((100% - 18px) / 2);
+    }
+
+    /* MAPA */
 
     .map-box {
         height: 340px;
     }
+}
+
+/* ========================================== */
+/* RESPONSIVE - CELULARES                      */
+/* ========================================== */
+
+@media (max-width: 540px) {
+
+    /* GALERIA */
+
+    .station-page .station-hero.hero-gallery {
+        height: 280px;
+    }
+
+    .station-hero-content {
+        padding: 0 20px 46px;
+    }
+
+    .station-hero h1 {
+        font-size: clamp(28px, 7vw, 38px);
+        letter-spacing: 1px;
+    }
+
+    .breadcrumb {
+        font-size: 11px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+
+    .station-hero-content > p:last-child {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .station-hero .gallery-dots {
+        bottom: 16px;
+    }
+
+    /* SECCIONES */
+
+    .station-page .section-padding {
+        padding: 48px 16px;
+    }
+
+    .section-header {
+        margin-bottom: 30px;
+    }
+
+        .station-info-text h2,
+        .section-header h2 {
+            font-size: 27px;
+        }
+
+    .station-data-card {
+        padding: 26px 22px;
+    }
+
+    /* PERSONAL */
+
+    .station-manager-card,
+    .station-personnel-panel {
+        padding: 26px 22px;
+    }
+
+    .station-leadership-grid,
+    .station-staff-grid,
+    .station-managers {
+        gap: 14px;
+    }
+
+    .station-leadership-grid {
+        margin-bottom: 14px;
+    }
+
+    .station-personnel-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .station-personnel-item {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 90px;
+        align-items: center;
+        padding: 18px 20px;
+    }
+
+    .station-personnel-value {
+        margin: 0;
+        font-size: 36px;
+        justify-self: center;
+    }
+
+    .station-personnel-item h4 {
+        justify-self: end;
+        text-align: right;
+        white-space: nowrap;
+    }
+
+    .station-personnel-value {
+        margin: 0;
+        font-size: 36px;
+    }
+
+    /* MOVILES */
+
+    .station-mobile-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .station-mobile-card {
+        flex-basis: 100%;
+        min-height: 145px;
+        padding: 20px;
+    }
+
+    /* MAPA */
+
+    .map-box {
+        height: 300px;
+    }
+}
+
+/* ========================================== */
+/* ACCESIBILIDAD                               */
+/* ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+    .station-mobile-card,
+    .station-hero .gallery-slide {
+        transition: none;
+    }
+
+        .station-mobile-card:hover {
+            transform: none;
+        }
 }

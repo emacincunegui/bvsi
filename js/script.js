@@ -34,6 +34,7 @@ document.querySelectorAll('.hero-gallery').forEach((gallery) => {
 
     resetAutoSlide();
 
+
     window.addEventListener('scroll', () => {
         const rect = gallery.getBoundingClientRect();
         const offset = rect.top * 0.25;
@@ -42,13 +43,24 @@ document.querySelectorAll('.hero-gallery').forEach((gallery) => {
             const img = slide.querySelector('img');
 
             if (img) {
-                img.style.transform = `translateY(${offset}px)`;
+                // Limitar el desplazamiento del parallax
+                const maxOffset = 75;
+
+                const safeOffset = Math.max(
+                    -maxOffset,
+                    Math.min(maxOffset, offset)
+                );
+
+                img.style.transform =
+                    `translateY(${safeOffset}px)`;
+
             } else {
                 slide.style.backgroundPosition =
                     `center calc(20% + ${offset}px)`;
             }
         });
     });
+
 
     dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
