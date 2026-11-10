@@ -1,0 +1,234 @@
+
+
+
+/* ==========================================
+   BVSI - COMISIÓN DIRECTIVA
+   ========================================== */
+
+/* ENCABEZADO */
+
+.directive-page .directive-hero .history-hero-image {
+    filter: none;
+    object-position: center;
+}
+
+.directive-page .directive-hero .history-hero-shade {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, .90),
+            rgba(0, 0, 0, .30) 90%
+        );
+}
+
+.directive-page .directive-hero h1 {
+    font-size: clamp(45px, 6.5vw, 96px);
+    max-width: 1100px;
+}
+
+
+/* ==========================================
+   PRESENTACIÓN
+   ========================================== */
+
+.directive-page .directive-intro {
+    padding-bottom: 85px;
+}
+
+.directive-page .directive-intro-description {
+    max-width: 850px;
+    margin: 22px auto 0;
+    font-size: 18px;
+    line-height: 1.75;
+    color: #555;
+}
+
+
+/* ==========================================
+   SECCIONES
+   ========================================== */
+
+.directive-page .directive-section {
+    padding: 85px 0;
+}
+
+.directive-page .directive-section-soft {
+    background: #f5f4f1;
+}
+
+/* ENCABEZADO DE SECCIÓN */
+
+.directive-section-header {
+    margin-bottom: 40px;
+}
+
+.directive-section-header h2 {
+    margin: 16px 0;
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 900;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.directive-section-header p {
+    max-width: 750px;
+    color: #555;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   TARJETAS DE INTEGRANTES
+   ========================================== */
+
+.directive-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.directive-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 0;
+    min-height: 170px;
+    padding: 32px;
+
+    background: #191919;
+    color: #fff;
+
+    border-top: 4px solid #c71920;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .08);
+}
+
+/* CARGO */
+
+.directive-role {
+    display: block;
+    margin-bottom: 14px;
+
+    color: #d4d4d4;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+/* NOMBRE */
+
+.directive-card h3 {
+    margin: 0;
+    color: #fff;
+
+    font-size: clamp(22px, 2.4vw, 30px);
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+/* TARJETAS PRINCIPALES */
+
+.directive-card-main {
+    min-height: 210px;
+    border-top-color: var(--gold, #e3b024);
+}
+
+/* VOCALES Y REVISORES */
+
+.directive-secondary-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+
+/* ==========================================
+   CIERRE INSTITUCIONAL
+   ========================================== */
+
+.directive-closing {
+    background: #191919;
+    color: #fff;
+    text-align: center;
+    padding: 90px 0;
+}
+
+.directive-closing .history-chapter {
+    color: var(--gold, #e3b024);
+}
+
+.directive-closing h2 {
+    margin: 16px 0 22px;
+    font-size: clamp(30px, 4vw, 54px);
+    text-transform: uppercase;
+    line-height: 1.15;
+}
+
+.directive-closing p {
+    max-width: 700px;
+    margin: 0 auto 26px;
+
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.directive-closing a {
+    color: var(--gold, #e3b024);
+}
+
+
+/* ==========================================
+   RESPONSIVE - TABLET
+   ========================================== */
+
+@media (max-width: 800px) {
+
+    .directive-page .directive-section {
+        padding: 65px 0;
+    }
+
+    .directive-grid {
+        gap: 16px;
+    }
+
+    .directive-card {
+        padding: 26px;
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE - CELULAR
+   ========================================== */
+
+@media (max-width: 600px) {
+
+    .directive-grid,
+    .directive-secondary-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .directive-card {
+        min-height: 135px;
+        padding: 25px;
+    }
+
+    .directive-card-main {
+        min-height: 155px;
+    }
+
+    .directive-section-header h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .directive-page .directive-hero h1 {
+        font-size: clamp(38px, 10vw, 52px);
+        overflow-wrap: anywhere;
+    }
+
+}

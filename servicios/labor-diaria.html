@@ -1,0 +1,436 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Labor Diaria | Bomberos Voluntarios de San Isidro</title>
+
+    <link rel="icon" href="../assets/icons/favicon.ico" sizes="any">
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Yaldevi:wght@100;200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+          rel="stylesheet">
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/historia.css">
+    <link rel="stylesheet" href="../css/labor-diaria.css">
+
+</head>
+
+<body>
+
+    <!-- ENCABEZADO INSTITUCIONAL -->
+    <header class="site-header">
+
+        <div class="emergency-bar">
+            <div>
+                <strong>EMERGENCIAS:</strong>
+                <a href="tel:100">100</a> /
+                <a href="tel:47472222">4747-2222</a>
+            </div>
+
+            <div>
+                <strong>LÍNEA AUXILIAR:</strong>
+                <a href="tel:47478927">4747-8927</a>
+            </div>
+        </div>
+
+        <div class="red-band">
+            <a class="mobile-title"
+               href="../index.html"
+               aria-label="Volver a la página principal">
+                <span>BOMBEROS</span>
+                <span>SAN ISIDRO</span>
+            </a>
+
+            <button class="menu-toggle"
+                    aria-label="Abrir menú"
+                    aria-controls="navegacion-principal">
+                ☰
+            </button>
+        </div>
+
+        <!-- NAVEGACIÓN PRINCIPAL -->
+        <nav class="main-nav"
+             id="navegacion-principal"
+             aria-label="Navegación principal">
+
+            <div class="nav-group nav-left">
+
+                <!-- CUARTELES -->
+                <div class="nav-item dropdown">
+                    <a href="#cuarteles">
+                        CUARTELES
+                        <span class="dropdown-arrow"></span>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="../cuarteles/cuartel-central.html">Cuartel Central</a>
+                        <a href="../cuarteles/destacamento-1.html">Destacamento Nº1</a>
+                        <a href="../cuarteles/destacamento-2.html">Destacamento Nº2</a>
+                    </div>
+                </div>
+
+                <!-- MÓVILES -->
+                <div class="nav-item dropdown dropdown-moviles">
+                    <a>
+                        MÓVILES
+                        <span class="dropdown-arrow"></span>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="../moviles/autobombas.html">Autobombas de Primera Intervención</a>
+                        <a href="../moviles/cisternas.html">Autobombas Cisternas</a>
+                        <a href="../moviles/especiales.html">Unidades Especiales</a>
+                        <a href="../moviles/livianas.html">Unidades Livianas</a>
+                        <a href="../moviles/historicos.html">Móviles Históricos</a>
+                    </div>
+                </div>
+
+                <!-- NOSOTROS -->
+                <div class="nav-item dropdown dropdown-nosotros">
+                    <a>
+                        NOSOTROS
+                        <span class="dropdown-arrow"></span>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="../nosotros/historia.html">Historia</a>
+                        <a href="../nosotros/cuerpo-activo.html">Cuerpo Activo</a>
+                        <a href="../nosotros/especialidades.html">Especialidades</a>
+                        <a href="../nosotros/cuerpo-reserva-aux.html">Cuerpo de Reserva y Auxiliar</a>
+                        <a href="../nosotros/comision-directiva.html">Comisión Directiva</a>
+                    </div>
+                </div>
+
+                <!-- SERVICIOS -->
+                <div class="nav-item dropdown dropdown-servicios">
+                    <a>
+                        SERVICIOS
+                        <span class="dropdown-arrow"></span>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="labor-diaria.html" aria-current="page">Labor Diaria</a>
+                        <a href="prevenciones.html">Prevenciones</a>
+                        <a href="capacitaciones.html">Capacitaciones</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ESCUDO -->
+            <a href="../index.html"
+               class="logo-wrap"
+               aria-label="Inicio">
+
+                <img src="../assets/logo/escudo-bvsi.svg"
+                     alt="Escudo Bomberos Voluntarios de San Isidro">
+            </a>
+
+            <div class="nav-group nav-right">
+                <a href="../noticias.html">NOTICIAS</a>
+                <a href="../contacto.html">CONTACTO</a>
+                <a href="../tecnica.html">OFICINA TÉCNICA</a>
+                <a href="../donaciones.html">DONACIONES</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ======================================
+         LABOR DIARIA
+         ====================================== -->
+
+    <main class="history-page labor-page">
+
+        <!-- PORTADA -->
+        <section class="history-hero labor-hero"
+                 aria-labelledby="labor-title">
+
+            <img class="history-hero-image"
+                 src="../assets/images/home/incendio.jpg"
+                 alt="Bomberos Voluntarios de San Isidro">
+
+            <div class="history-hero-shade"></div>
+
+            <div class="history-hero-content">
+
+                <span class="history-eyebrow">
+                    Sociedad de Bomberos Voluntarios de San Isidro
+                </span>
+
+                <h1 id="labor-title">
+                    Labor <em>Diaria</em>
+                </h1>
+
+                <p>
+                    Compromiso, vocación y servicio.
+                    Una labor que continúa más allá
+                    de cada emergencia.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUCCIÓN -->
+        <section class="history-intro labor-intro">
+
+            <span class="history-kicker">
+                Al servicio de nuestra comunidad
+            </span>
+
+            <p>
+                Ser bombero voluntario es mucho más
+                que responder a una emergencia.
+                Es estar preparado, trabajar en equipo
+                y dedicar tiempo al servicio de los demás.
+            </p>
+
+            <div class="history-intro-rule"></div>
+
+        </section>
+
+
+        <!-- INTERVENCIONES -->
+        <section class="labor-section labor-section-soft"
+                 id="intervenciones">
+
+            <div class="history-shell">
+
+                <div class="labor-heading">
+
+                    <span class="history-chapter">
+                        01 / Nuestra actividad operativa
+                    </span>
+
+                    <h2>Respuesta ante emergencias</h2>
+
+                    <p>
+                        El Cuerpo Activo interviene ante diferentes
+                        situaciones que requieren una respuesta
+                        organizada, personal capacitado y
+                        equipamiento especializado.
+                    </p>
+
+                </div>
+
+                <div class="labor-grid">
+
+                    <article class="labor-card">
+                        <span class="labor-card-number">01</span>
+                        <h3>Incendios</h3>
+                        <p>
+                            Intervenciones ante incendios
+                            estructurales, vehiculares,
+                            forestales y otros escenarios
+                            que requieren tareas de extinción
+                            y protección.
+                        </p>
+                    </article>
+
+                    <article class="labor-card">
+                        <span class="labor-card-number">02</span>
+                        <h3>Rescates</h3>
+                        <p>
+                            Operaciones de rescate y asistencia
+                            en siniestros viales, situaciones
+                            de atrapamiento y lugares
+                            de difícil acceso.
+                        </p>
+                    </article>
+
+                    <article class="labor-card">
+                        <span class="labor-card-number">03</span>
+                        <h3>Emergencias diversas</h3>
+                        <p>
+                            Asistencia ante situaciones
+                            que pueden comprometer la seguridad
+                            de las personas, los bienes
+                            o el entorno.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TRABAJO EN EL CUARTEL -->
+        <section class="labor-section"
+                 id="trabajo-cuartel">
+
+            <div class="history-shell labor-split">
+
+                <div class="labor-content">
+
+                    <span class="history-chapter">
+                        02 / Más allá de las emergencias
+                    </span>
+
+                    <h2>El trabajo que no siempre se ve</h2>
+
+                    <p class="labor-lead">
+                        La preparación para una emergencia
+                        comienza mucho antes de que suene
+                        la alarma.
+                    </p>
+
+                    <p>
+                        Las actividades cotidianas dentro
+                        de los cuarteles forman parte
+                        fundamental del funcionamiento
+                        de nuestra institución.
+                    </p>
+
+                    <p>
+                        El mantenimiento de vehículos,
+                        la revisión de materiales,
+                        la organización del equipamiento
+                        y las tareas operativas permiten
+                        conservar los recursos en condiciones
+                        para su utilización.
+                    </p>
+
+                    <p>
+                        Este trabajo, desarrollado por el
+                        personal de la institución, constituye
+                        una parte esencial del servicio
+                        que se brinda a la comunidad.
+                    </p>
+
+                </div>
+
+                <aside class="labor-highlight">
+
+                    <span class="labor-highlight-label">
+                        Nuestra preparación
+                    </span>
+
+                    <span class="labor-highlight-title">
+                        Cada detalle cuenta.
+                    </span>
+
+                    <p>
+                        El cuidado del material,
+                        el conocimiento de los equipos
+                        y la coordinación entre integrantes
+                        contribuyen a una respuesta
+                        segura y eficiente.
+                    </p>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- PRESENCIA INSTITUCIONAL -->
+        <section class="labor-section labor-section-dark"
+                 id="presencia">
+
+            <div class="history-shell">
+
+                <div class="labor-heading">
+
+                    <span class="history-chapter">
+                        03 / Nuestra organización
+                    </span>
+
+                    <h2>Tres dependencias, una misma vocación</h2>
+
+                    <p>
+                        El Cuartel Central y los dos
+                        destacamentos conforman la estructura
+                        operativa de Bomberos Voluntarios
+                        de San Isidro.
+                    </p>
+
+                </div>
+
+                <div class="labor-stations">
+
+                    <a href="../cuarteles/cuartel-central.html">
+                        <span>01</span>
+                        <strong>Cuartel Central</strong>
+                        <span class="labor-station-arrow" aria-hidden="true">→</span>
+                    </a>
+
+                    <a href="../cuarteles/destacamento-1.html">
+                        <span>02</span>
+                        <strong>Destacamento Nº1 · Boulogne</strong>
+                        <span class="labor-station-arrow" aria-hidden="true">→</span>
+                    </a>
+
+                    <a href="../cuarteles/destacamento-2.html">
+                        <span>03</span>
+                        <strong>Destacamento Nº2 · Béccar</strong>
+                        <span class="labor-station-arrow" aria-hidden="true">→</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CIERRE -->
+        <section class="labor-closing">
+
+            <div class="history-shell">
+
+                <span class="history-chapter">
+                    Vocación de servicio
+                </span>
+
+                <h2>Siempre al servicio de San Isidro</h2>
+
+                <p>
+                    Detrás de cada intervención existe
+                    un compromiso que se construye
+                    día a día, a través del esfuerzo,
+                    la responsabilidad y el trabajo
+                    conjunto de nuestros bomberos.
+                </p>
+
+                <strong>
+                    Desde 1939, al servicio de nuestra comunidad.
+                </strong>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <p>
+            Sociedad de Bomberos Voluntarios de San Isidro |
+            Todos los derechos reservados 2026 |
+            Designed and Developed by: Pyro Studios
+        </p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,218 @@
+
+
+/* ==========================================
+   BVSI - CUERPO DE RESERVA Y AUXILIAR
+   ========================================== */
+
+/* ENCABEZADO */
+
+.reserve-page .reserve-hero .history-hero-image {
+    filter: none;
+    object-position: center;
+}
+
+.reserve-page .reserve-hero .history-hero-shade {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, .88),
+            rgba(0, 0, 0, .28) 90%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(0, 0, 0, .35),
+            transparent 60%
+        );
+}
+
+/* TÍTULO */
+
+.reserve-page .reserve-hero h1 {
+    max-width: 1100px;
+    font-size: clamp(46px, 6.5vw, 94px);
+}
+
+
+/* ==========================================
+   PRESENTACIÓN
+   ========================================== */
+
+.reserve-page .reserve-intro {
+    padding-bottom: 90px;
+}
+
+
+/* ==========================================
+   CUERPOS
+   ========================================== */
+
+.reserve-page .reserve-section {
+    padding: 95px 0;
+}
+
+.reserve-page .reserve-section-soft {
+    background: #f5f4f1;
+}
+
+/* DISTRIBUCIÓN */
+
+.reserve-page .reserve-grid {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.4fr)
+        minmax(250px, .7fr);
+
+    gap: clamp(35px, 6vw, 90px);
+    align-items: center;
+}
+
+/* TÍTULOS */
+
+.reserve-page .reserve-copy h2 {
+    font-size: clamp(36px, 4.3vw, 62px);
+    line-height: 1.06;
+    text-transform: uppercase;
+    margin: 0 0 25px;
+    letter-spacing: -.025em;
+}
+
+/* PÁRRAFOS */
+
+.reserve-page .reserve-copy p {
+    color: #404040;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* TEXTO DESTACADO */
+
+.reserve-page .reserve-copy .reserve-lead {
+    color: #171717;
+    font-size: clamp(20px, 2.2vw, 25px);
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+
+/* ==========================================
+   CUADROS LATERALES
+   ========================================== */
+
+.reserve-page .reserve-feature {
+    background: #191919;
+    border-bottom: 5px solid var(--gold);
+    color: #fff;
+
+    padding: 38px 34px;
+    min-height: 260px;
+
+    position: relative;
+    overflow: hidden;
+}
+
+/* NÚMERO DECORATIVO */
+
+.reserve-page .reserve-number {
+    display: block;
+    font-size: 90px;
+    font-weight: 900;
+    line-height: 1;
+
+    color: rgba(255, 255, 255, .11);
+    margin-bottom: 14px;
+}
+
+/* TÍTULO DEL CUADRO */
+
+.reserve-page .reserve-feature h3 {
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: 0 0 14px;
+}
+
+/* DESCRIPCIÓN DEL CUADRO */
+
+.reserve-page .reserve-feature p {
+    color: #dedede;
+    line-height: 1.65;
+    font-size: 15px;
+    margin: 0;
+}
+
+
+/* ==========================================
+   CIERRE INSTITUCIONAL
+   ========================================== */
+
+.reserve-page .reserve-closing {
+    text-align: center;
+    background: #191919;
+    color: #fff;
+    padding: 85px 0;
+}
+
+.reserve-page .reserve-closing .history-chapter {
+    color: var(--gold);
+}
+
+.reserve-page .reserve-closing h2 {
+    font-size: clamp(32px, 4vw, 55px);
+    text-transform: uppercase;
+    margin: 0 0 18px;
+}
+
+.reserve-page .reserve-closing p {
+    color: #ddd;
+    font-size: 18px;
+    max-width: 700px;
+    line-height: 1.7;
+    margin: 0 auto 22px;
+}
+
+.reserve-page .reserve-closing a {
+    color: var(--gold);
+}
+
+
+/* ==========================================
+   RESPONSIVE - TABLET
+   ========================================== */
+
+@media (max-width: 800px) {
+
+    .reserve-page .reserve-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reserve-page .reserve-section {
+        padding: 65px 0;
+    }
+
+    .reserve-page .reserve-feature {
+        min-height: 0;
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE - CELULAR
+   ========================================== */
+
+@media (max-width: 480px) {
+
+    .reserve-page .reserve-hero h1 {
+        font-size: clamp(38px, 10vw, 52px);
+        overflow-wrap: anywhere;
+    }
+
+    .reserve-page .reserve-copy p {
+        font-size: 16px;
+    }
+
+    .reserve-page .reserve-feature {
+        padding: 28px 24px;
+    }
+
+}

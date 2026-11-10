@@ -1,0 +1,398 @@
+
+/* ==========================================
+   BVSI - CAPACITACIONES
+   ========================================== */
+
+/* PORTADA */
+
+.training-page .training-hero .history-hero-image {
+    filter: none;
+    object-position: center 45%;
+}
+
+.training-page .training-hero .history-hero-shade {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, .86),
+            rgba(0, 0, 0, .28) 85%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(0, 0, 0, .55),
+            transparent 60%
+        );
+}
+
+/* INTRODUCCIÓN */
+
+.training-page .training-intro {
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+/* ESTRUCTURA GENERAL */
+
+.training-page .training-section {
+    padding: 100px 0;
+}
+
+.training-page .training-section-soft {
+    background: #f5f4f1;
+}
+
+.training-page .training-heading {
+    max-width: 830px;
+    margin-bottom: 52px;
+}
+
+.training-page .training-heading h2,
+.training-page .training-content h2 {
+    font-size: clamp(34px, 4.5vw, 58px);
+    font-weight: 900;
+    line-height: 1.08;
+    letter-spacing: -.025em;
+    text-transform: uppercase;
+    margin: 0 0 25px;
+}
+
+.training-page .training-heading p,
+.training-page .training-content p {
+    color: #383838;
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 0 0 20px;
+}
+
+/* DEPARTAMENTO */
+
+.training-page .training-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(280px, .8fr);
+    gap: clamp(45px, 7vw, 100px);
+    align-items: center;
+}
+
+.training-page .training-content .training-lead {
+    color: #202020;
+    font-size: clamp(21px, 2.4vw, 27px);
+    font-weight: 700;
+    line-height: 1.45;
+    margin-bottom: 28px;
+}
+
+.training-page .training-aside {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 52px 40px;
+    border-bottom: 5px solid var(--gold);
+}
+
+.training-page .training-aside-label {
+    display: block;
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.training-page .training-aside h3 {
+    font-size: clamp(30px, 3.4vw, 44px);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin: 0 0 25px;
+}
+
+.training-page .training-aside p {
+    color: #d1d1d1;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* FORMACIÓN INSTITUCIONAL */
+
+.training-page .training-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.training-page .training-card {
+    background: #fff;
+    padding: 42px 32px 45px;
+    border-top: 5px solid #a71118;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.training-page .training-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+}
+
+.training-page .training-card-number {
+    display: block;
+    color: #adadad;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: .12em;
+    margin-bottom: 35px;
+}
+
+.training-page .training-card h3 {
+    color: #181818;
+    font-size: clamp(23px, 2.2vw, 29px);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.15;
+    margin: 0 0 20px;
+}
+
+.training-page .training-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 0 0 16px;
+}
+
+.training-page .training-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* ÁREAS DE CAPACITACIÓN */
+
+.training-page .training-areas {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 35px;
+    border-top: 1px solid #dedede;
+}
+
+.training-page .training-area {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    padding: 28px 15px;
+    border-bottom: 1px solid #dedede;
+}
+
+.training-page .training-area span {
+    color: #a71118;
+    font-size: 13px;
+    font-weight: 900;
+    min-width: 26px;
+}
+
+.training-page .training-area strong {
+    color: #202020;
+    font-size: clamp(18px, 2vw, 25px);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.training-page .training-areas-note {
+    margin: 32px 0 0;
+    color: #777;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* CAPACITACIÓN PARA EMPRESAS */
+
+.training-page .training-section-dark {
+    background: #191919;
+    color: #fff;
+}
+
+.training-page .training-section-dark .history-chapter {
+    color: var(--gold);
+}
+
+.training-page .training-business-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(280px, .75fr);
+    gap: clamp(45px, 7vw, 100px);
+    align-items: center;
+}
+
+.training-page .training-business-content h2 {
+    font-size: clamp(35px, 4.8vw, 62px);
+    font-weight: 900;
+    line-height: 1.08;
+    text-transform: uppercase;
+    letter-spacing: -.025em;
+    margin: 0 0 30px;
+}
+
+.training-page .training-business-content p {
+    color: #c8c8c8;
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 0 0 22px;
+}
+
+.training-page .training-business-content .training-business-lead {
+    color: #fff;
+    font-size: clamp(21px, 2.4vw, 27px);
+    font-weight: 700;
+    line-height: 1.45;
+    margin-bottom: 30px;
+}
+
+.training-page .training-business-box {
+    padding: 40px;
+    background: #282828;
+    border-top: 5px solid var(--gold);
+}
+
+.training-page .training-business-label {
+    display: block;
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.training-page .training-business-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 28px;
+}
+
+.training-page .training-business-box li {
+    color: #fff;
+    font-size: 19px;
+    font-weight: 700;
+    padding: 18px 0;
+    border-bottom: 1px solid #494949;
+}
+
+.training-page .training-business-box p {
+    color: #c8c8c8;
+    font-size: 15px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* CIERRE INSTITUCIONAL */
+
+.training-page .training-closing {
+    padding: 100px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.training-page .training-closing h2 {
+    max-width: 900px;
+    margin: 0 auto 25px;
+    font-size: clamp(34px, 5vw, 60px);
+    font-weight: 900;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.training-page .training-closing p {
+    max-width: 710px;
+    margin: 0 auto 30px;
+    color: #444;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.training-page .training-closing strong {
+    display: block;
+    color: #a71118;
+    font-size: 19px;
+    font-weight: 900;
+}
+
+/* RESPONSIVE - TABLET */
+
+@media (max-width: 900px) {
+
+    .training-page .training-split,
+    .training-page .training-business-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .training-page .training-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .training-page .training-aside {
+        padding: 40px;
+    }
+}
+
+/* RESPONSIVE - CELULARES */
+
+@media (max-width: 700px) {
+
+    .training-page .training-section {
+        padding: 65px 0;
+    }
+
+    .training-page .training-intro {
+        padding: 70px 20px;
+    }
+
+    .training-page .training-grid,
+    .training-page .training-areas {
+        grid-template-columns: 1fr;
+    }
+
+    .training-page .training-card {
+        padding: 30px 25px;
+    }
+
+    .training-page .training-card-number {
+        margin-bottom: 22px;
+    }
+
+    .training-page .training-area {
+        padding: 24px 5px;
+        gap: 18px;
+    }
+
+    .training-page .training-business-box {
+        padding: 30px 25px;
+    }
+
+    .training-page .training-closing {
+        padding: 75px 20px;
+    }
+
+    .training-page .training-closing p {
+        font-size: 16px;
+    }
+}
+
+/* CELULARES PEQUEÑOS */
+
+@media (max-width: 480px) {
+
+    .training-page .training-hero h1 {
+        font-size: clamp(39px, 9vw, 53px);
+        overflow-wrap: anywhere;
+    }
+
+    .training-page .training-content p,
+    .training-page .training-heading p,
+    .training-page .training-business-content p {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .training-page .training-aside {
+        padding: 35px 25px;
+    }
+}

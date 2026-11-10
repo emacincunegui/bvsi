@@ -101,6 +101,16 @@ document.querySelectorAll('.hero-gallery').forEach((gallery) => {
         if (diff > 60) showSlide(currentSlide + 1);
         if (diff < -60) showSlide(currentSlide - 1);
     });
+
+
+/* Evitar el arrastre nativo de las imágenes */
+gallery.querySelectorAll('img').forEach((img) => {
+    img.draggable = false;
+    img.addEventListener('dragstart', (e) => {
+        e.preventDefault();
+    });
+});
+
 });
 
 menuToggle?.addEventListener('click', () => {

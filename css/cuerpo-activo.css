@@ -1,0 +1,234 @@
+
+/* ==========================================
+   BVSI - CUERPO ACTIVO
+   ========================================== */
+
+/* GALERÍA PRINCIPAL */
+
+.active-page .station-hero.hero-gallery {
+    height: 450px;
+}
+
+.active-page .station-hero .gallery-slide img {
+    object-position: center 35%;
+}
+
+.active-page .station-hero-overlay {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, .82),
+        rgba(0, 0, 0, .23)
+    );
+}
+
+
+/* ORGANIZACIÓN DEL PERSONAL */
+
+.active-page .station-personnel-grid.active-ranks {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.active-page .active-ranks .station-personnel-item {
+    display: block;
+    text-align: left;
+    border-top: 4px solid var(--station-red);
+    padding: 30px 26px;
+    box-shadow: var(--station-shadow);
+    background: #f6f6f6;
+}
+
+.active-page .active-ranks .station-personnel-item h3 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.active-page .active-ranks .station-personnel-item p {
+    margin: 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+
+/* TARJETAS DE DEPENDENCIAS */
+
+.active-page .active-stations .station-mobile-card {
+    text-decoration: none;
+    color: inherit;
+}
+
+.active-page .active-stations .station-mobile-card:focus-visible {
+    outline: 3px solid #e6b42d;
+    outline-offset: 3px;
+}
+
+.active-page .active-stations .station-mobile-model {
+    margin-top: 16px;
+    font-weight: 700;
+}
+
+
+/* FOTOGRAFÍA INSTITUCIONAL */
+
+.active-page .active-photo img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    display: block;
+}
+
+.active-page .active-photo p {
+    font-size: 13px;
+    color: #666;
+    margin: 9px 0 0;
+}
+
+
+/* ==========================================
+   RESPONSIVE
+   ========================================== */
+
+@media (max-width: 800px) {
+
+    .active-page .station-personnel-grid.active-ranks {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .active-page .station-hero.hero-gallery {
+        height: 390px;
+    }
+
+    .active-page .active-ranks .station-personnel-item {
+        padding: 24px;
+    }
+
+}
+
+
+/* ==========================================
+   JEFATURA DEL CUERPO ACTIVO
+   ========================================== */
+
+/* Separación entre las dos filas de jefatura */
+.active-page .active-command-grid {
+    margin-top: 24px;
+}
+
+/* Mantener uniformidad en las tarjetas */
+.active-page .active-command-grid .station-manager-card {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+/* CANTIDAD DE PERSONAL */
+
+.active-page .active-ranks .station-personnel-item {
+    text-align: center;
+}
+
+.active-personnel-number {
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: clamp(48px, 6vw, 72px);
+    font-weight: 900;
+    line-height: 1;
+    color: #c71920;
+    margin-bottom: 20px;
+}
+
+.active-page .active-ranks .station-personnel-item h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.active-page .active-ranks .station-personnel-item p {
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   INTEGRANTES DEL CUERPO ACTIVO
+   ========================================== */
+
+/* TARJETAS */
+
+.active-page .active-ranks .station-personnel-item {
+    text-align: center;
+    padding: 35px 20px;
+}
+
+/* NÚMEROS */
+
+.active-personnel-number {
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: clamp(48px, 6vw, 72px);
+    font-weight: 900;
+    line-height: 1;
+    color: #c71920;
+    margin-bottom: 20px;
+}
+
+/* CATEGORÍAS */
+
+.active-page .active-ranks .station-personnel-item h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.active-page .active-ranks .station-personnel-item p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* TOTAL GENERAL */
+
+.active-personnel-total {
+    margin-top: 50px;
+    text-align: center;
+    padding: 30px 15px;
+    border-top: 1px solid #ddd;
+}
+
+.active-personnel-total span {
+    display: block;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: clamp(58px, 8vw, 90px);
+    font-weight: 900;
+    line-height: 1;
+    color: #c71920;
+    margin-bottom: 15px;
+}
+
+.active-personnel-total h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.active-personnel-total p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 480px) {
+
+    .active-page .active-ranks .station-personnel-item {
+        padding: 28px 15px;
+    }
+
+    .active-personnel-total {
+        margin-top: 30px;
+    }
+}

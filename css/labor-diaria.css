@@ -1,0 +1,374 @@
+
+
+
+/* ==========================================
+   BVSI - LABOR DIARIA
+   ========================================== */
+
+
+/* ==========================================
+   PORTADA
+   ========================================== */
+
+.labor-page .labor-hero .history-hero-image {
+    filter: none;
+    object-position: center 45%;
+}
+
+.labor-page .labor-hero .history-hero-shade {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, .88),
+            rgba(0, 0, 0, .28) 85%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(0, 0, 0, .55),
+            transparent 60%
+        );
+}
+
+
+/* ==========================================
+   INTRODUCCIÓN
+   ========================================== */
+
+.labor-page .labor-intro {
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+
+/* ==========================================
+   ESTRUCTURA GENERAL
+   ========================================== */
+
+.labor-page .labor-section {
+    padding: 100px 0;
+}
+
+.labor-page .labor-section-soft {
+    background: #f5f4f1;
+}
+
+.labor-page .labor-heading {
+    max-width: 830px;
+    margin-bottom: 52px;
+}
+
+.labor-page .labor-heading h2,
+.labor-page .labor-content h2 {
+    font-size: clamp(34px, 4.5vw, 58px);
+    font-weight: 900;
+    line-height: 1.08;
+    letter-spacing: -.025em;
+    text-transform: uppercase;
+    margin: 0 0 25px;
+}
+
+.labor-page .labor-heading p,
+.labor-page .labor-content p {
+    color: #383838;
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 0 0 20px;
+}
+
+
+/* ==========================================
+   TARJETAS DE INTERVENCIONES
+   ========================================== */
+
+.labor-page .labor-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.labor-page .labor-card {
+    background: #fff;
+    padding: 42px 32px 45px;
+    border-top: 5px solid #a71118;
+    min-height: 320px;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.labor-page .labor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+}
+
+.labor-page .labor-card-number {
+    display: block;
+    color: #adadad;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: .12em;
+    margin-bottom: 36px;
+}
+
+.labor-page .labor-card h3 {
+    color: #181818;
+    font-size: clamp(23px, 2.3vw, 30px);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.15;
+    margin: 0 0 20px;
+}
+
+.labor-page .labor-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+
+/* ==========================================
+   TRABAJO DENTRO DEL CUARTEL
+   ========================================== */
+
+.labor-page .labor-split {
+    display: grid;
+    grid-template-columns: minmax(0, 1.3fr) minmax(280px, .8fr);
+    gap: clamp(45px, 7vw, 100px);
+    align-items: center;
+}
+
+.labor-page .labor-content .labor-lead {
+    color: #202020;
+    font-size: clamp(21px, 2.4vw, 27px);
+    font-weight: 700;
+    line-height: 1.45;
+    margin-bottom: 28px;
+}
+
+.labor-page .labor-highlight {
+    position: relative;
+    background: #1e1e1e;
+    color: #fff;
+    padding: 52px 40px;
+    border-bottom: 5px solid var(--gold);
+}
+
+.labor-page .labor-highlight-label {
+    display: block;
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.labor-page .labor-highlight-title {
+    display: block;
+    font-size: clamp(30px, 3.4vw, 44px);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.labor-page .labor-highlight p {
+    color: #d1d1d1;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* ==========================================
+   TRES DEPENDENCIAS
+   ========================================== */
+
+.labor-page .labor-section-dark {
+    background: #191919;
+    color: #fff;
+}
+
+.labor-page .labor-section-dark .history-chapter {
+    color: var(--gold);
+}
+
+.labor-page .labor-section-dark .labor-heading p {
+    color: #c8c8c8;
+}
+
+.labor-page .labor-stations {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #454545;
+}
+
+.labor-page .labor-stations a {
+    display: grid;
+    grid-template-columns: 65px 1fr 40px;
+    align-items: center;
+    gap: 25px;
+    color: #fff;
+    padding: 32px 15px;
+    border-bottom: 1px solid #454545;
+    transition:
+        background .2s ease,
+        color .2s ease;
+}
+
+.labor-page .labor-stations a:hover {
+    background: #272727;
+}
+
+.labor-page .labor-stations a > span:first-child {
+    color: var(--gold);
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.labor-page .labor-stations strong {
+    font-size: clamp(19px, 2.6vw, 32px);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.labor-page .labor-station-arrow {
+    color: var(--gold);
+    font-size: 28px;
+    text-align: right;
+    transition: transform .2s ease;
+}
+
+.labor-page .labor-stations a:hover .labor-station-arrow {
+    transform: translateX(5px);
+}
+
+
+/* ==========================================
+   CIERRE INSTITUCIONAL
+   ========================================== */
+
+.labor-page .labor-closing {
+    padding: 100px 20px;
+    background: #fff;
+    text-align: center;
+}
+
+.labor-page .labor-closing h2 {
+    max-width: 850px;
+    margin: 0 auto 25px;
+    font-size: clamp(34px, 5vw, 60px);
+    line-height: 1.1;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.labor-page .labor-closing p {
+    max-width: 710px;
+    margin: 0 auto 30px;
+    color: #444;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.labor-page .labor-closing strong {
+    display: block;
+    color: #a71118;
+    font-size: 19px;
+    font-weight: 900;
+}
+
+
+/* ==========================================
+   RESPONSIVE - TABLET
+   ========================================== */
+
+@media (max-width: 900px) {
+
+    .labor-page .labor-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .labor-page .labor-split {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .labor-page .labor-highlight {
+        padding: 40px;
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE - CELULARES
+   ========================================== */
+
+@media (max-width: 700px) {
+
+    .labor-page .labor-section {
+        padding: 65px 0;
+    }
+
+    .labor-page .labor-intro {
+        padding: 70px 20px;
+    }
+
+    .labor-page .labor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .labor-page .labor-card {
+        min-height: auto;
+        padding: 30px 25px;
+    }
+
+    .labor-page .labor-card-number {
+        margin-bottom: 22px;
+    }
+
+    .labor-page .labor-stations a {
+        grid-template-columns: 34px 1fr 24px;
+        gap: 12px;
+        padding: 27px 5px;
+    }
+
+    .labor-page .labor-station-arrow {
+        font-size: 22px;
+    }
+
+    .labor-page .labor-closing {
+        padding: 75px 20px;
+    }
+
+}
+
+
+/* ==========================================
+   CELULARES PEQUEÑOS
+   ========================================== */
+
+@media (max-width: 480px) {
+
+    .labor-page .labor-hero h1 {
+        font-size: 53px;
+    }
+
+    .labor-page .labor-content p,
+    .labor-page .labor-heading p {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .labor-page .labor-highlight {
+        padding: 35px 25px;
+    }
+
+    .labor-page .labor-closing p {
+        font-size: 16px;
+    }
+
+}

@@ -62,38 +62,55 @@ a {
     min-height: 88px;
     background: #171717;
     border-bottom: 4px solid var(--gold);
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* GRUPOS DE NAVEGACIÃ“N */
+
 .nav-group {
-  display: flex;
-  align-items: center;
-  gap: clamp(16px, 2.2vw, 42px);
-  font-size: clamp(12px, 1vw, 18px);
-  color: #fff;
-  font-weight: 900;
-  text-transform: uppercase;
-  white-space: nowrap;
+    display: flex;
+    align-items: center;
+
+    gap: clamp(16px, 2.2vw, 42px);
+
+    font-size: clamp(12px, 1vw, 18px);
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    white-space: nowrap;
 }
 
+/* GRUPO IZQUIERDO */
+
 .nav-left {
-    justify-content: center;
+    flex: 1;
+    min-width: 0;
+
+    justify-content: flex-end;
     margin-right: 180px;
 }
 
+/* GRUPO DERECHO */
+
 .nav-right {
-    justify-content: center;
+    flex: 1;
+    min-width: 0;
+
+    justify-content: flex-start;
     margin-left: 180px;
 }
 
+/* ENLACES */
+
 .nav-group a {
-  transition: color .2s ease;
+    transition: color .2s ease;
 }
 
 .nav-group a:hover {
-  color: var(--gold);
+    color: var(--gold);
 }
 
 .logo-wrap {
@@ -273,7 +290,6 @@ a {
 }
 
 .news-button {
-    display: inline-block;
     float: right;
     background: #c40f17;
     color: white;
@@ -577,7 +593,7 @@ a {
 }
 
 @media (max-width: 1024px) {
-    /* Común tablet + móvil */
+    /* Comï¿½n tablet + mï¿½vil */
     .main-nav {
         display: none;
         min-height: auto;

@@ -1,0 +1,686 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Oficina Técnica | Bomberos Voluntarios de San Isidro</title>
+
+    <meta name="description"
+          content="Oficina Técnica de Bomberos Voluntarios de San Isidro. Asesoramiento en prevención y protección contra incendios, planes de emergencia, evacuación y auditorías.">
+
+    <link rel="icon" href="assets/icons/favicon.ico" sizes="any">
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Yaldevi:wght@100;200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+          rel="stylesheet">
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/historia.css">
+    <link rel="stylesheet" href="css/tecnica.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO INSTITUCIONAL -->
+    <header class="site-header">
+
+        <div class="emergency-bar">
+            <div>
+                <strong>EMERGENCIAS:</strong>
+                <a href="tel:100">100</a> /
+                <a href="tel:47472222">4747-2222</a>
+            </div>
+
+            <div>
+                <strong>LÍNEA AUXILIAR:</strong>
+                <a href="tel:47478927">4747-8927</a>
+            </div>
+        </div>
+
+        <div class="red-band">
+            <a class="mobile-title"
+               href="index.html"
+               aria-label="Volver al inicio">
+                <span>BOMBEROS</span>
+                <span>SAN ISIDRO</span>
+            </a>
+
+            <button class="menu-toggle"
+                    aria-label="Abrir menú"
+                    aria-controls="navegacion-principal"
+                    aria-expanded="false">
+                ☰
+            </button>
+        </div>
+
+        <!-- NAVEGACIÓN PRINCIPAL -->
+        <nav class="main-nav"
+             id="navegacion-principal"
+             aria-label="Navegación principal">
+
+            <div class="nav-group nav-left">
+
+                <!-- CUARTELES -->
+                <div class="nav-item dropdown">
+                    <a href="#cuarteles">
+                        CUARTELES
+                        <span class="dropdown-arrow"></span>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="cuarteles/cuartel-central.html">Cuartel Central</a>
+                        <a href="cuarteles/destacamento-1.html">Destacamento Nº1</a>
+                        <a href="cuarteles/destacamento-2.html">Destacamento Nº2</a>
+                    </div>
+                </div>
+
+                <!-- MÓVILES -->
+                <div class="nav-item dropdown dropdown-moviles">
+                    <a>
+                        MÓVILES
+                        <span class="dropdown-arrow"></span>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="moviles/autobombas.html">
+                            Autobombas de Primera Intervención
+                        </a>
+                        <a href="moviles/cisternas.html">
+                            Autobombas Cisternas
+                        </a>
+                        <a href="moviles/especiales.html">
+                            Unidades Especiales
+                        </a>
+                        <a href="moviles/livianas.html">
+                            Unidades Livianas
+                        </a>
+                        <a href="moviles/historicos.html">
+                            Móviles Históricos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NOSOTROS -->
+                <div class="nav-item dropdown dropdown-nosotros">
+                    <a>
+                        NOSOTROS
+                        <span class="dropdown-arrow"></span>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="nosotros/historia.html">Historia</a>
+                        <a href="nosotros/cuerpo-activo.html">Cuerpo Activo</a>
+                        <a href="nosotros/especialidades.html">Especialidades</a>
+                        <a href="nosotros/cuerpo-reserva-aux.html">
+                            Cuerpo de Reserva y Auxiliar
+                        </a>
+                        <a href="nosotros/comision-directiva.html">
+                            Comisión Directiva
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SERVICIOS -->
+                <div class="nav-item dropdown dropdown-servicios">
+                    <a>
+                        SERVICIOS
+                        <span class="dropdown-arrow"></span>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="servicios/labor-diaria.html">
+                            Labor Diaria
+                        </a>
+                        <a href="servicios/prevenciones.html">
+                            Prevenciones
+                        </a>
+                        <a href="servicios/capacitaciones.html">
+                            Capacitaciones
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ESCUDO CENTRAL -->
+            <a href="index.html"
+               class="logo-wrap"
+               aria-label="Inicio">
+
+                <img src="assets/logo/escudo-bvsi.svg"
+                     alt="Escudo Bomberos Voluntarios de San Isidro">
+            </a>
+
+            <div class="nav-group nav-right">
+                <a href="noticias.html">NOTICIAS</a>
+                <a href="contacto.html">CONTACTO</a>
+                <a href="tecnica.html" aria-current="page">OFICINA TÉCNICA</a>
+                <a href="donaciones.html">DONACIONES</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ==========================================
+         OFICINA TÉCNICA
+         ========================================== -->
+
+    <main class="history-page tecnica-page">
+
+        <!-- PORTADA -->
+        <section class="history-hero tecnica-hero"
+                 aria-labelledby="tecnica-title">
+
+            <img class="history-hero-image"
+                 src="assets/images/home/oficina-tecnica.jpg"
+                 alt="Oficina Técnica de Bomberos Voluntarios de San Isidro"
+                 fetchpriority="high">
+
+            <div class="history-hero-shade"></div>
+
+            <div class="history-hero-content">
+
+                <span class="history-eyebrow">
+                    Sociedad de Bomberos Voluntarios de San Isidro
+                </span>
+
+                <h1 id="tecnica-title">
+                    Oficina <em>Técnica</em>
+                </h1>
+
+                <p>
+                    Asesoramiento, prevención y protección
+                    contra incendios al servicio
+                    de nuestra comunidad.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUCCIÓN -->
+        <section class="history-intro tecnica-intro">
+
+            <span class="history-kicker">
+                Departamento Técnico
+            </span>
+
+            <p>
+                Actuar en prevención es la mejor manera
+                de evitar un incendio antes de que se produzca.
+            </p>
+
+            <div class="history-intro-rule"></div>
+
+        </section>
+
+
+        <!-- DEPARTAMENTO TÉCNICO -->
+        <section class="tecnica-section"
+                 id="departamento">
+
+            <div class="history-shell tecnica-split">
+
+                <div class="tecnica-content">
+
+                    <span class="history-chapter">
+                        01 / Nuestra función
+                    </span>
+
+                    <h2>Departamento Técnico</h2>
+
+                    <p class="tecnica-lead">
+                        La prevención y la protección contra
+                        incendios son fundamentales para
+                        preservar la vida y los bienes.
+                    </p>
+
+                    <p>
+                        Muchos establecimientos aún presentan
+                        deficiencias en sus sistemas de prevención
+                        y protección contra incendios,
+                        incrementando los riesgos para las
+                        personas, las instalaciones y el entorno.
+                    </p>
+
+                    <p>
+                        Adoptar medidas adecuadas permite reducir
+                        la probabilidad de que se produzca un
+                        siniestro y contar con los recursos
+                        necesarios para actuar de manera rápida
+                        y segura si ocurre una emergencia.
+                    </p>
+
+                    <p>
+                        La Sociedad de Bomberos Voluntarios de
+                        San Isidro cuenta con una Oficina Técnica
+                        puesta al servicio de la comunidad del
+                        partido, destinada a brindar asesoramiento
+                        en materia de prevención, protección
+                        y respuesta ante incendios.
+                    </p>
+
+                </div>
+
+                <aside class="tecnica-highlight">
+
+                    <span class="tecnica-highlight-label">
+                        Nuestro objetivo
+                    </span>
+
+                    <h3>La seguridad comienza con la prevención</h3>
+
+                    <p>
+                        Identificar los riesgos, establecer
+                        medidas de protección y planificar
+                        una respuesta adecuada constituye
+                        una parte esencial de la seguridad
+                        contra incendios.
+                    </p>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROTECCIÓN CONTRA INCENDIOS -->
+        <section class="tecnica-section tecnica-section-soft"
+                 id="proteccion">
+
+            <div class="history-shell">
+
+                <div class="tecnica-heading">
+
+                    <span class="history-chapter">
+                        02 / Prevención y protección
+                    </span>
+
+                    <h2>¿Cómo protegernos contra los incendios?</h2>
+
+                    <p>
+                        La seguridad contra incendios requiere
+                        un conjunto de medidas adaptadas
+                        a las características y los riesgos
+                        de cada establecimiento.
+                    </p>
+
+                    <p>
+                        Viviendas, locales comerciales, oficinas,
+                        industrias y otros edificios deben
+                        contemplar medidas de prevención,
+                        instalaciones de protección y una
+                        organización adecuada para responder
+                        ante una emergencia.
+                    </p>
+
+                </div>
+
+                <div class="tecnica-principles">
+
+                    <article class="tecnica-principle">
+                        <span class="tecnica-principle-number">01</span>
+
+                        <h3>Prevención</h3>
+
+                        <p>
+                            Reconocer las condiciones de riesgo
+                            y adoptar medidas destinadas
+                            a reducir la posibilidad
+                            de un incendio.
+                        </p>
+                    </article>
+
+                    <article class="tecnica-principle">
+                        <span class="tecnica-principle-number">02</span>
+
+                        <h3>Protección</h3>
+
+                        <p>
+                            Contar con equipos, instalaciones
+                            y sistemas adecuados para detectar,
+                            controlar y limitar
+                            las consecuencias de un incendio.
+                        </p>
+                    </article>
+
+                    <article class="tecnica-principle">
+                        <span class="tecnica-principle-number">03</span>
+
+                        <h3>Preparación</h3>
+
+                        <p>
+                            Establecer procedimientos,
+                            organizar los recursos
+                            y preparar al personal
+                            para actuar ante una emergencia.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVICIOS OFRECIDOS -->
+        <section class="tecnica-section"
+                 id="servicios-tecnicos">
+
+            <div class="history-shell">
+
+                <div class="tecnica-heading">
+
+                    <span class="history-chapter">
+                        03 / Asesoramiento especializado
+                    </span>
+
+                    <h2>Servicios ofrecidos</h2>
+
+                    <p>
+                        La Oficina Técnica desarrolla distintas
+                        actividades de asesoramiento, planificación
+                        y evaluación relacionadas con la seguridad
+                        y la protección contra incendios.
+                    </p>
+
+                </div>
+
+                <div class="tecnica-services">
+
+                    <!-- PLANES DE EMERGENCIA -->
+                    <article class="tecnica-service">
+                        <span class="tecnica-service-number">01</span>
+
+                        <div>
+                            <h3>
+                                Planes de actuación ante emergencias
+                            </h3>
+
+                            <p>
+                                Elaboración de planes que establecen
+                                procedimientos y acciones a seguir
+                                ante diferentes situaciones
+                                de emergencia.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- PROYECTOS DE PROTECCIÓN -->
+                    <article class="tecnica-service">
+                        <span class="tecnica-service-number">02</span>
+
+                        <div>
+                            <h3>
+                                Proyectos de condiciones
+                                de protección contra incendios
+                            </h3>
+
+                            <p>
+                                Desarrollo de proyectos orientados
+                                a establecer condiciones
+                                de seguridad y medidas de protección
+                                acordes a los riesgos
+                                del establecimiento.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- AUDITORÍAS -->
+                    <article class="tecnica-service">
+                        <span class="tecnica-service-number">03</span>
+
+                        <div>
+                            <h3>
+                                Auditorías de seguridad
+                                contra incendios
+                            </h3>
+
+                            <p>
+                                Evaluación de las condiciones
+                                de seguridad contra incendios,
+                                identificación de riesgos
+                                y oportunidades de mejora.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- EVACUACIÓN -->
+                    <article class="tecnica-service">
+                        <span class="tecnica-service-number">04</span>
+
+                        <div>
+                            <h3>
+                                Planes de evacuación
+                            </h3>
+
+                            <p>
+                                Elaboración de procedimientos
+                                para organizar la evacuación
+                                de personas ante situaciones
+                                que requieran abandonar
+                                un establecimiento.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- CARGA DE FUEGO -->
+                    <article class="tecnica-service">
+                        <span class="tecnica-service-number">05</span>
+
+                        <div>
+                            <h3>
+                                Estudios de carga de fuego
+                            </h3>
+
+                            <p>
+                                Evaluación de la carga de fuego
+                                de un sector o establecimiento,
+                                como parte del análisis
+                                de sus condiciones
+                                de protección contra incendios.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- NORMATIVAS -->
+                    <article class="tecnica-service">
+                        <span class="tecnica-service-number">06</span>
+
+                        <div>
+                            <h3>
+                                Auditorías de adecuación
+                                a normas de protección
+                            </h3>
+
+                            <p>
+                                Evaluación del grado de adecuación
+                                a normas nacionales e internacionales
+                                de protección contra incendios,
+                                según corresponda.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- BRIGADAS -->
+                    <article class="tecnica-service">
+                        <span class="tecnica-service-number">07</span>
+
+                        <div>
+                            <h3>
+                                Capacitación de brigadas
+                                de emergencia
+                            </h3>
+
+                            <p>
+                                Formación de brigadas empresariales
+                                en combate de incendios,
+                                primeros auxilios y procedimientos
+                                de respuesta inicial.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- PERSONAL GENERAL -->
+                    <article class="tecnica-service">
+                        <span class="tecnica-service-number">08</span>
+
+                        <div>
+                            <h3>
+                                Capacitación de personal
+                            </h3>
+
+                            <p>
+                                Actividades de formación
+                                para el personal en general
+                                sobre incendios, primeros auxilios,
+                                evacuación y actuación
+                                ante emergencias.
+                            </p>
+                        </div>
+                    </article>
+
+                    <!-- OBRAS -->
+                    <article class="tecnica-service">
+                        <span class="tecnica-service-number">09</span>
+
+                        <div>
+                            <h3>
+                                Auditorías de obras
+                            </h3>
+
+                            <p>
+                                Evaluación de aspectos relacionados
+                                con la seguridad y la protección
+                                contra incendios durante
+                                el desarrollo de obras.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ASESORAMIENTO -->
+        <section class="tecnica-section tecnica-section-dark"
+                 id="asesoramiento">
+
+            <div class="history-shell tecnica-dark-layout">
+
+                <div class="tecnica-dark-content">
+
+                    <span class="history-chapter">
+                        04 / Compromiso con la seguridad
+                    </span>
+
+                    <h2>
+                        Cada establecimiento
+                        presenta riesgos diferentes
+                    </h2>
+
+                    <p>
+                        La prevención contra incendios
+                        no se basa en una solución única.
+                        Cada actividad, edificio o instalación
+                        presenta características que deben
+                        considerarse al momento de evaluar
+                        sus condiciones de seguridad.
+                    </p>
+
+                    <p>
+                        Por este motivo, el asesoramiento técnico
+                        constituye una herramienta fundamental
+                        para determinar las medidas de prevención
+                        y protección que correspondan.
+                    </p>
+
+                </div>
+
+                <aside class="tecnica-dark-aside">
+
+                    <span class="tecnica-dark-label">
+                        Protección integral
+                    </span>
+
+                    <strong>
+                        Prevenir.
+                        Proteger.
+                        Preparar.
+                    </strong>
+
+                    <p>
+                        Tres conceptos fundamentales
+                        para trabajar por entornos
+                        más seguros.
+                    </p>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACTO -->
+        <section class="tecnica-contact"
+                 id="consultas">
+
+            <div class="history-shell">
+
+                <span class="history-chapter">
+                    Oficina Técnica
+                </span>
+
+                <h2>¿Necesitás asesoramiento?</h2>
+
+                <p>
+                    Para realizar consultas sobre los servicios
+                    ofrecidos por nuestra Oficina Técnica,
+                    podés comunicarte con la institución
+                    a través de nuestros canales de contacto.
+                </p>
+
+                <a href="contacto.html"
+                   class="tecnica-contact-button">
+                    Contactanos
+                    <span aria-hidden="true">→</span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <p>
+            Sociedad de Bomberos Voluntarios de San Isidro |
+            Todos los derechos reservados 2026 |
+            Designed and Developed by: Pyro Studios
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

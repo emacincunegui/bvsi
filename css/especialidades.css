@@ -1,0 +1,317 @@
+
+
+/* ==========================================
+   BVSI - ESPECIALIDADES
+   ========================================== */
+
+/* ENCABEZADO */
+
+.specialties-page .specialties-hero .history-hero-image {
+    filter: none;
+    object-position: center 48%;
+}
+
+.specialties-page .specialties-hero .history-hero-shade {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, .89),
+            rgba(0, 0, 0, .32) 85%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(0, 0, 0, .50),
+            transparent 60%
+        );
+}
+
+.specialties-page .history-hero h1 {
+    font-size: clamp(44px, 7vw, 96px);
+    overflow-wrap: anywhere;
+}
+
+
+/* ==========================================
+   NAVEGACIÓN POR ESPECIALIDADES
+   ========================================== */
+
+.specialties-page .specialties-jump .history-jump-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+    overflow: visible;
+    padding: 5px 0;
+}
+
+.specialties-page .specialties-jump a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 16px 15px;
+    white-space: normal;
+    font-size: 12px;
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+
+/* INTRODUCCIÓN */
+
+.specialties-page .specialties-intro {
+    padding-bottom: 85px;
+}
+
+
+/* ==========================================
+   SECCIONES DE ESPECIALIDADES
+   ========================================== */
+
+.specialties-page .specialty-section {
+    padding: 95px 0;
+    scroll-margin-top: 130px;
+}
+
+/* Alternancia de fondo */
+
+.specialties-page .specialties-soft {
+    background: #f5f4f1;
+}
+
+/* Distribución en dos columnas */
+
+.specialties-page .specialty-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.35fr) minmax(270px, .75fr);
+    gap: clamp(30px, 6vw, 90px);
+    align-items: center;
+}
+
+
+/* ==========================================
+   TEXTO DE CADA ESPECIALIDAD
+   ========================================== */
+
+.specialties-page .specialty-content h2 {
+    font-size: clamp(32px, 4.5vw, 57px);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.09;
+    margin: 0 0 22px;
+    letter-spacing: -.025em;
+}
+
+.specialties-page .specialty-content > p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #383838;
+    margin: 0 0 18px;
+}
+
+/* Descripción destacada */
+
+.specialties-page .specialty-content .specialty-tagline {
+    font-size: clamp(19px, 2vw, 24px);
+    font-weight: 700;
+    color: #202020;
+    line-height: 1.45;
+}
+
+/* Áreas de preparación */
+
+.specialties-page .specialty-content .specialty-keywords {
+    color: #9f1117;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    margin-top: 26px;
+}
+
+
+/* ==========================================
+   EMBLEMAS
+   ========================================== */
+
+.specialties-page .specialty-symbol {
+    min-height: 315px;
+    background: #1e1e1e;
+    border-bottom: 5px solid var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: 42px 24px;
+}
+
+/* Número decorativo */
+
+.specialties-page .specialty-symbol-number {
+    position: absolute;
+    top: -38px;
+    right: 8px;
+    font-size: 190px;
+    letter-spacing: -.07em;
+    font-weight: 900;
+    color: rgba(255, 255, 255, .045);
+    pointer-events: none;
+}
+
+/* Contenedor de emblemas */
+
+.specialties-page .specialty-emblems {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Imágenes */
+
+.specialties-page .specialty-emblems img {
+    width: min(205px, 55vw);
+    height: 210px;
+    object-fit: contain;
+    filter: drop-shadow(
+        0 12px 17px rgba(0, 0, 0, .35)
+    );
+}
+
+/* Dos emblemas para Buceo y Salvamento Acuático */
+
+.specialties-page #acuatico .specialty-emblems img {
+    width: min(150px, 38vw);
+    height: 185px;
+}
+
+
+/* ==========================================
+   CIERRE INSTITUCIONAL
+   ========================================== */
+
+.specialties-page .specialties-closing {
+    background: #171717;
+    color: #fff;
+    text-align: center;
+    padding: 90px 0;
+}
+
+.specialties-page .specialties-closing h2 {
+    font-size: clamp(30px, 4vw, 54px);
+    line-height: 1.1;
+    text-transform: uppercase;
+    margin: 0 0 20px;
+}
+
+.specialties-page .specialties-closing p {
+    max-width: 710px;
+    margin: 0 auto 25px;
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.75;
+}
+
+.specialties-page .specialties-closing .history-chapter {
+    color: var(--gold);
+}
+
+.specialties-page .specialties-closing .history-inline-link {
+    color: var(--gold);
+}
+
+
+/* ==========================================
+   RESPONSIVE - TABLET
+   ========================================== */
+
+@media (max-width: 850px) {
+
+    .specialties-page .specialty-layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .specialties-page .specialty-section {
+        padding: 62px 0;
+    }
+
+    .specialties-page .specialty-symbol {
+        min-height: 250px;
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE - CELULARES
+   ========================================== */
+
+@media (max-width: 700px) {
+
+    /* Menú en 2 columnas */
+
+    .specialties-page .specialties-jump .history-jump-inner {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        padding: 4px 10px;
+    }
+
+    .specialties-page .specialties-jump a {
+        min-height: 54px;
+        padding: 12px 6px;
+        font-size: 13px;
+        line-height: 1.2;
+        font-weight: 800;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0;
+    }
+
+    /* Psicología ocupa la última fila */
+
+    .specialties-page .specialties-jump a:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .specialties-page .specialties-intro {
+        padding: 65px 20px;
+    }
+
+}
+
+
+/* ==========================================
+   RESPONSIVE - CELULARES PEQUEÑOS
+   ========================================== */
+
+@media (max-width: 480px) {
+
+    .specialties-page .history-hero h1 {
+        font-size: 43px;
+    }
+
+    .specialties-page .specialty-content > p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .specialties-page .specialty-symbol {
+        min-height: 225px;
+    }
+
+    .specialties-page .specialty-emblems img {
+        height: 170px;
+    }
+
+    .specialties-page #acuatico .specialty-emblems img {
+        width: min(125px, 35vw);
+        height: 150px;
+    }
+
+}
