@@ -21,6 +21,7 @@
     <!-- ESTILOS -->
     <link rel="stylesheet" href="../css/style.css">
 <link rel="stylesheet" href="../css/historia.css">
+<link rel="stylesheet" href="../css/galerias-portada.css">
 <link rel="stylesheet" href="../css/especialidades.css">
 
     <link rel="stylesheet"
@@ -146,14 +147,44 @@
          ENCABEZADO
          ====================================== -->
 
-    <section class="history-hero specialties-hero"
+    <section class="history-hero specialties-hero mobile-hero"
              aria-labelledby="specialties-title">
 
-        <img
-            class="history-hero-image"
-            src="../assets/images/home/especialidades.webp"
-            alt="Especialidades de Bomberos Voluntarios de San Isidro"
-        >
+        <div class="gallery-slide active">
+            <img class="history-hero-image"
+                 src="../assets/images/home/especialidades-3.webp"
+                 alt="Bombero realizando tareas de rescate con cuerdas" fetchpriority="high">
+        </div>
+
+        <div class="gallery-slide">
+            <img class="history-hero-image"
+                 src="../assets/images/home/especialidades-5.webp"
+                 alt="Personal de rescate participando en una intervención">
+        </div>
+
+        <div class="gallery-slide">
+            <img class="history-hero-image"
+                 src="../assets/images/home/especialidades-2.webp"
+                 alt="Bomberos realizando tareas de entrenamiento al aire libre">
+        </div>
+
+        <div class="gallery-slide">
+            <img class="history-hero-image"
+                 src="../assets/images/home/especialidades-1.webp"
+                 alt="Bomberos realizando tareas de entrenamiento al aire libre">
+        </div>
+
+        <div class="gallery-slide">
+            <img class="history-hero-image"
+                 src="../assets/images/home/especialidades-6.webp"
+                 alt="Bomberos realizando tareas de entrenamiento al aire libre">
+        </div>
+
+        <div class="gallery-slide">
+            <img class="history-hero-image"
+                 src="../assets/images/home/especialidades-4.webp"
+                 alt="Bomberos realizando tareas de entrenamiento al aire libre">
+        </div>
 
         <div class="history-hero-shade"></div>
 
@@ -173,6 +204,9 @@
             </p>
 
         </div>
+
+        <!-- Indicadores generados automáticamente por moviles.js -->
+        <div class="gallery-dots"></div>
 
     </section>
 
@@ -619,5 +653,6 @@
 </footer>
 
 <script src="../js/script.js"></script>
+<script src="../js/moviles.js"></script>
 </body>
 </html>

@@ -22,6 +22,7 @@
     <!-- ESTILOS -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/historia.css">
+<link rel="stylesheet" href="../css/galerias-portada.css">
     <link rel="stylesheet" href="../css/capacitaciones.css">
 
 </head>
@@ -152,15 +153,28 @@
     <main class="history-page training-page">
 
         <!-- PORTADA -->
-        <section class="history-hero training-hero"
-                 aria-labelledby="training-title">
+        <section class="history-hero training-hero mobile-hero"
+             aria-labelledby="training-title">
 
+        <div class="gallery-slide active">
             <img class="history-hero-image"
-                 src="../assets/images/home/especialidades.webp"
-                 alt="Personal de Bomberos Voluntarios de San Isidro"
-                 fetchpriority="high">
+                 src="../assets/images/home/capacitacion-1.webp"
+                 alt="Capacitacion" fetchpriority="high">
+        </div>
 
-            <div class="history-hero-shade"></div>
+        <div class="gallery-slide">
+            <img class="history-hero-image"
+                 src="../assets/images/home/capacitacion-2.webp"
+                 alt="Capacitacion" fetchpriority="high">
+        </div>
+
+        <div class="gallery-slide">
+            <img class="history-hero-image"
+                 src="../assets/images/home/home-3.webp"
+                 alt="Actividad de formación y prácticas de Bomberos Voluntarios de San Isidro">
+        </div>
+
+        <div class="history-hero-shade"></div>
 
             <div class="history-hero-content">
 
@@ -179,7 +193,10 @@
 
             </div>
 
-        </section>
+        <!-- Indicadores generados automáticamente por moviles.js -->
+        <div class="gallery-dots"></div>
+
+    </section>
 
 
         <!-- INTRODUCCIÓN -->
@@ -540,6 +557,7 @@
     </footer>
 
     <script src="../js/script.js"></script>
+<script src="../js/moviles.js"></script>
 
 </body>
 </html>

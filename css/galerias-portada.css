@@ -1,0 +1,86 @@
+/* ==========================================
+   BVSI - GALERÍAS EN PORTADAS TIPO HISTORIA
+   Especialidades y Capacitaciones
+   Reutiliza el carrusel automático de moviles.js
+   ========================================== */
+
+/* Mantiene la altura original de .history-hero (570 / 490 / 430 px) */
+.history-hero.mobile-hero {
+    overflow: hidden;
+}
+
+.history-hero.mobile-hero .gallery-slide {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 1s ease;
+    pointer-events: none;
+}
+
+.history-hero.mobile-hero .gallery-slide.active {
+    opacity: 1;
+}
+
+/* La clase .history-hero-image conserva los filtros y encuadres originales */
+.history-hero.mobile-hero .gallery-slide .history-hero-image {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: auto;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.history-hero.mobile-hero .history-hero-shade {
+    z-index: 1;
+    pointer-events: none;
+}
+
+.history-hero.mobile-hero .history-hero-content {
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* Indicadores iguales a los de las galerías de Móviles */
+.history-hero.mobile-hero .gallery-dots {
+    position: absolute;
+    z-index: 3;
+    left: 50%;
+    bottom: 24px;
+    display: flex;
+    gap: 10px;
+    transform: translateX(-50%);
+}
+
+.history-hero.mobile-hero .gallery-dots .dot {
+    width: 11px;
+    height: 11px;
+    padding: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    appearance: none;
+}
+
+.history-hero.mobile-hero .gallery-dots .dot.active {
+    background: #fff;
+}
+
+.history-hero.mobile-hero .gallery-dots .dot:focus-visible {
+    outline: 2px solid var(--gold, #e3b024);
+    outline-offset: 3px;
+}
+
+@media (max-width: 700px) {
+    .history-hero.mobile-hero .gallery-dots {
+        bottom: 16px;
+    }
+}
