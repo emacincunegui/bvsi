@@ -1,0 +1,614 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Donaciones | Bomberos Voluntarios de San Isidro</title>
+
+    <meta name="description"
+          content="Colaborá con Bomberos Voluntarios de San Isidro. Tu aporte contribuye al mantenimiento de la institución, sus móviles y equipamiento.">
+
+    <link rel="icon" href="assets/icons/favicon.ico">
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Yaldevi:wght@100;200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+          rel="stylesheet">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/historia.css">
+    <link rel="stylesheet" href="css/donaciones.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO INSTITUCIONAL -->
+    <header class="site-header">
+
+        <div class="emergency-bar">
+            <div>
+                <strong>EMERGENCIAS:</strong>
+                <a href="tel:100">100</a> /
+                <a href="tel:47472222">4747-2222</a>
+            </div>
+
+            <div>
+                <strong>LÍNEA AUXILIAR:</strong>
+                <a href="tel:47478927">4747-8927</a>
+            </div>
+        </div>
+
+        <div class="red-band">
+            <a class="mobile-title"
+               href="index.html"
+               aria-label="Volver al inicio">
+                <span>BOMBEROS</span>
+                <span>SAN ISIDRO</span>
+            </a>
+
+            <button class="menu-toggle"
+                    aria-label="Abrir menú"
+                    aria-controls="navegacion-principal">
+                ☰
+            </button>
+        </div>
+
+        <!-- NAVEGACIÓN PRINCIPAL -->
+        <nav class="main-nav"
+             id="navegacion-principal"
+             aria-label="Navegación principal">
+
+            <div class="nav-group nav-left">
+
+                <!-- CUARTELES -->
+                <div class="nav-item dropdown">
+                    <a href="#cuarteles">
+                        CUARTELES
+                        <span class="dropdown-arrow"></span>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="cuarteles/cuartel-central.html">Cuartel Central</a>
+                        <a href="cuarteles/destacamento-1.html">Destacamento Nº1</a>
+                        <a href="cuarteles/destacamento-2.html">Destacamento Nº2</a>
+                    </div>
+                </div>
+
+                <!-- MÓVILES -->
+                <div class="nav-item dropdown dropdown-moviles">
+                    <a>
+                        MÓVILES
+                        <span class="dropdown-arrow"></span>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="moviles/autobombas.html">
+                            Autobombas de Primera Intervención
+                        </a>
+                        <a href="moviles/cisternas.html">
+                            Autobombas Cisternas
+                        </a>
+                        <a href="moviles/especiales.html">
+                            Unidades Especiales
+                        </a>
+                        <a href="moviles/livianas.html">
+                            Unidades Livianas
+                        </a>
+                        <a href="moviles/historicos.html">
+                            Móviles Históricos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- NOSOTROS -->
+                <div class="nav-item dropdown dropdown-nosotros">
+                    <a>
+                        NOSOTROS
+                        <span class="dropdown-arrow"></span>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="nosotros/historia.html">Historia</a>
+                        <a href="nosotros/cuerpo-activo.html">Cuerpo Activo</a>
+                        <a href="nosotros/especialidades.html">Especialidades</a>
+                        <a href="nosotros/cuerpo-reserva-aux.html">
+                            Cuerpo de Reserva y Auxiliar
+                        </a>
+                        <a href="nosotros/comision-directiva.html">
+                            Comisión Directiva
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SERVICIOS -->
+                <div class="nav-item dropdown dropdown-servicios">
+                    <a>
+                        SERVICIOS
+                        <span class="dropdown-arrow"></span>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="servicios/labor-diaria.html">
+                            Labor Diaria
+                        </a>
+                        <a href="servicios/prevenciones.html">
+                            Prevenciones
+                        </a>
+                        <a href="servicios/capacitaciones.html">
+                            Capacitaciones
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ESCUDO -->
+            <a href="index.html"
+               class="logo-wrap"
+               aria-label="Volver al inicio">
+
+                <img src="assets/logo/escudo-bvsi.svg"
+                     alt="Escudo Bomberos Voluntarios de San Isidro">
+            </a>
+
+            <div class="nav-group nav-right">
+                <a href="noticias.html">NOTICIAS</a>
+                <a href="contacto.html">CONTACTO</a>
+                <a href="tecnica.html">OFICINA TÉCNICA</a>
+                <a href="donaciones.html" aria-current="page">
+                    DONACIONES
+                </a>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ==========================================
+         DONACIONES
+         ========================================== -->
+
+    <main class="history-page donaciones-page">
+
+        <!-- PORTADA -->
+        <section class="history-hero donaciones-hero"
+                 aria-labelledby="donaciones-title">
+
+            <img class="history-hero-image"
+                 src="assets/images/home/banner-final.webp"
+                 alt="Bomberos Voluntarios de San Isidro">
+
+            <div class="history-hero-shade"></div>
+
+            <div class="history-hero-content">
+
+                <span class="history-eyebrow">
+                    Sociedad de Bomberos Voluntarios de San Isidro
+                </span>
+
+                <h1 id="donaciones-title">
+                    Donaciones
+                </h1>
+
+                <p>
+                    Tu colaboración nos ayuda a seguir
+                    trabajando por la seguridad
+                    de nuestra comunidad.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUCCIÓN -->
+        <section class="history-intro donaciones-intro">
+
+            <span class="history-kicker">
+                Tu ayuda hace la diferencia
+            </span>
+
+            <p>
+                Cada aporte contribuye al sostenimiento
+                de nuestra institución y nos permite
+                continuar desarrollando nuestra labor
+                al servicio de San Isidro.
+            </p>
+
+            <div class="history-intro-rule"></div>
+
+        </section>
+
+
+        <!-- ======================================
+             DESTINO DE LOS APORTES
+             ====================================== -->
+
+        <section class="donaciones-section"
+                 id="destino-aportes">
+
+            <div class="history-shell">
+
+                <div class="donaciones-heading">
+
+                    <span class="history-chapter">
+                        01 / Tu colaboración
+                    </span>
+
+                    <h2>¿A qué se destina tu aporte?</h2>
+
+                    <p>
+                        El funcionamiento de una institución
+                        de bomberos voluntarios requiere
+                        recursos para conservar sus instalaciones,
+                        vehículos y materiales en condiciones.
+                    </p>
+
+                    <p>
+                        Las donaciones están destinadas
+                        a contribuir con el mantenimiento
+                        y sostenimiento de la institución,
+                        permitiendo acompañar las necesidades
+                        de su actividad cotidiana.
+                    </p>
+
+                </div>
+
+                <div class="donaciones-purpose-grid">
+
+                    <article class="donaciones-purpose">
+
+                        <div class="donaciones-purpose-icon">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+
+                        <h3>Mantenimiento de móviles</h3>
+
+                        <p>
+                            Conservación, reparaciones
+                            y mantenimiento de los vehículos
+                            utilizados en las intervenciones.
+                        </p>
+
+                    </article>
+
+                    <article class="donaciones-purpose">
+
+                        <div class="donaciones-purpose-icon">
+                            <i class="fa-solid fa-helmet-safety"></i>
+                        </div>
+
+                        <h3>Equipamiento y materiales</h3>
+
+                        <p>
+                            Mantenimiento y reposición
+                            de herramientas, materiales
+                            y elementos necesarios
+                            para las tareas operativas.
+                        </p>
+
+                    </article>
+
+                    <article class="donaciones-purpose">
+
+                        <div class="donaciones-purpose-icon">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+
+                        <h3>Instalaciones</h3>
+
+                        <p>
+                            Conservación y mantenimiento
+                            de las dependencias
+                            y espacios de trabajo
+                            de nuestra institución.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             SELECCIÓN DE DONACIÓN
+             ====================================== -->
+
+        <section class="donaciones-section donaciones-section-soft"
+                 id="colaborar">
+
+            <div class="history-shell donaciones-payment-layout">
+
+                <!-- TEXTO -->
+                <div class="donaciones-payment-info">
+
+                    <span class="history-chapter">
+                        02 / Sumate a colaborar
+                    </span>
+
+                    <h2>Tu aporte nos ayuda a seguir</h2>
+
+                    <p class="donaciones-payment-lead">
+                        No importa el monto.
+                        Cada colaboración es importante.
+                    </p>
+
+                    <p>
+                        Elegí uno de los importes sugeridos
+                        o ingresá el monto con el que
+                        desees colaborar.
+                    </p>
+
+                    <p>
+                        Estamos preparando un sistema
+                        de donaciones a través de Mercado Pago
+                        para facilitar las contribuciones
+                        a nuestra institución.
+                    </p>
+
+                    <div class="donaciones-payment-note">
+
+                        <i class="fa-solid fa-shield-heart"></i>
+
+                        <p>
+                            Los aportes estarán orientados
+                            al mantenimiento y sostenimiento
+                            de Bomberos Voluntarios
+                            de San Isidro.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- PANEL DE DONACIONES -->
+                <div class="donaciones-widget">
+
+                    <div class="donaciones-widget-header">
+
+                        <div>
+                            <span class="donaciones-widget-label">
+                                Colaborá con BVSI
+                            </span>
+
+                            <h3>Elegí tu aporte</h3>
+                        </div>
+
+                        <span class="donaciones-demo-badge">
+                            Demostración
+                        </span>
+
+                    </div>
+
+                    <!-- IMPORTES PREDEFINIDOS -->
+                    <div class="donaciones-amount-grid"
+                         role="group"
+                         aria-label="Montos sugeridos">
+
+                        <button type="button"
+                                class="donaciones-amount"
+                                data-monto="3000"
+                                aria-pressed="false">
+                            $ 3.000
+                        </button>
+
+                        <button type="button"
+                                class="donaciones-amount active"
+                                data-monto="5000"
+                                aria-pressed="true">
+                            $ 5.000
+                        </button>
+
+                        <button type="button"
+                                class="donaciones-amount"
+                                data-monto="10000"
+                                aria-pressed="false">
+                            $ 10.000
+                        </button>
+
+                        <button type="button"
+                                class="donaciones-amount"
+                                data-monto="20000"
+                                aria-pressed="false">
+                            $ 20.000
+                        </button>
+
+                    </div>
+
+                    <!-- MONTO PERSONALIZADO -->
+                    <div class="donaciones-custom">
+
+                        <label class="donaciones-custom-option">
+                            <input type="checkbox"
+                                   id="donacionPersonalizada">
+
+                            <span>
+                                Quiero elegir otro monto
+                            </span>
+                        </label>
+
+                        <div class="donaciones-custom-field"
+                             id="donacionCustomField"
+                             hidden>
+
+                            <label for="montoPersonalizado">
+                                Ingresá el monto en pesos
+                            </label>
+
+                            <div class="donaciones-input-wrap">
+                                <span>$</span>
+
+                                <input type="number"
+                                       id="montoPersonalizado"
+                                       min="1"
+                                       max="100000000"
+                                       step="1"
+                                       inputmode="numeric"
+                                       placeholder="Ejemplo: 7500"
+                                       disabled>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- RESUMEN -->
+                    <div class="donaciones-summary">
+
+                        <span class="donaciones-summary-label">
+                            Aporte seleccionado
+                        </span>
+
+                        <strong id="donacionTotal">
+                            $ 5.000
+                        </strong>
+
+                        <small>
+                            Donación única · Pesos argentinos
+                        </small>
+
+                    </div>
+
+                    <!-- BOTÓN -->
+                    <button type="button"
+                            class="donaciones-pay-button"
+                            id="donacionContinuar">
+
+                        <span>
+                            Continuar con Mercado Pago
+                        </span>
+
+                        <i class="fa-solid fa-arrow-right"
+                           aria-hidden="true"></i>
+
+                    </button>
+
+                    <p class="donaciones-demo-notice"
+                       id="donacionEstado"
+                       role="status"
+                       aria-live="polite"></p>
+
+                    <p class="donaciones-widget-footer">
+                        Versión demostrativa.
+                        No se realizan cobros
+                        ni se solicitan datos de pago.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             COMPROMISO INSTITUCIONAL
+             ====================================== -->
+
+        <section class="donaciones-section donaciones-dark">
+
+            <div class="history-shell">
+
+                <span class="history-chapter">
+                    03 / Compromiso con la comunidad
+                </span>
+
+                <h2>
+                    Detrás de cada emergencia
+                    hay una institución que sostener
+                </h2>
+
+                <p>
+                    El compromiso de nuestros bomberos
+                    se refleja en cada intervención,
+                    entrenamiento y actividad desarrollada
+                    al servicio de la comunidad.
+                </p>
+
+                <p>
+                    Para acompañar esa vocación de servicio
+                    es fundamental mantener los recursos
+                    materiales y las instalaciones
+                    que hacen posible nuestra labor.
+                </p>
+
+                <div class="donaciones-dark-rule"></div>
+
+                <strong>
+                    Tu colaboración también forma
+                    parte de nuestro compromiso.
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- CIERRE -->
+        <section class="donaciones-closing">
+
+            <div class="history-shell">
+
+                <span class="history-chapter">
+                    Gracias por acompañarnos
+                </span>
+
+                <h2>Juntos podemos seguir adelante</h2>
+
+                <p>
+                    Cada aporte representa un gesto
+                    de confianza y acompañamiento
+                    hacia quienes trabajan diariamente
+                    por la seguridad de San Isidro.
+                </p>
+
+                <a href="#colaborar"
+                   class="donaciones-closing-button">
+
+                    Quiero colaborar
+
+                    <i class="fa-solid fa-arrow-up"
+                       aria-hidden="true"></i>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <p>
+            Sociedad de Bomberos Voluntarios de San Isidro |
+            Todos los derechos reservados 2026 |
+            Designed and Developed by: Pyro Studios
+        </p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/script.js"></script>
+    <script src="js/donaciones.js"></script>
+
+</body>
+</html>

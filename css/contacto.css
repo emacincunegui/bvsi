@@ -1,0 +1,687 @@
+
+/* ==========================================
+   BVSI - CONTACTO
+   ========================================== */
+
+/* PORTADA */
+
+.contacto-page .contacto-hero .history-hero-image {
+    filter: none;
+    object-position: center 45%;
+}
+
+.contacto-page .contacto-hero .history-hero-shade {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.88),
+            rgba(0,0,0,.28) 85%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(0,0,0,.55),
+            transparent 60%
+        );
+}
+
+/* INTRODUCCIÓN */
+
+.contacto-page .contacto-intro {
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+/* ESTRUCTURA GENERAL */
+
+.contacto-page .contacto-section {
+    padding: 100px 0;
+}
+
+.contacto-page .contacto-section-soft {
+    background: #f5f4f1;
+}
+
+.contacto-page .contacto-heading {
+    max-width: 830px;
+    margin-bottom: 48px;
+}
+
+.contacto-page .contacto-heading h2 {
+    font-size: clamp(34px, 4.5vw, 58px);
+    font-weight: 900;
+    line-height: 1.08;
+    letter-spacing: -.025em;
+    text-transform: uppercase;
+    margin: 0 0 25px;
+}
+
+.contacto-page .contacto-heading p {
+    color: #444;
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* ==========================================
+   TELÉFONOS
+   ========================================== */
+
+.contacto-page .contacto-phones {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.contacto-page .contacto-phone-card {
+    min-width: 0;
+    background: #fff;
+    padding: 36px 28px;
+    border-top: 5px solid var(--gold);
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.contacto-page .contacto-phone-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+.contacto-page .contacto-emergency {
+    border-top-color: #a71118;
+}
+
+.contacto-page .contacto-phone-icon {
+    color: #a71118;
+    font-size: 28px;
+    margin-bottom: 28px;
+}
+
+.contacto-page .contacto-card-label {
+    color: #777;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    margin-bottom: 18px;
+}
+
+.contacto-page .contacto-phone-card h3 {
+    color: #202020;
+    font-size: clamp(27px, 3vw, 39px);
+    line-height: 1.1;
+    font-weight: 900;
+    white-space: nowrap;
+    margin: 0 0 32px;
+}
+
+.contacto-page .contacto-phone-card a {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+
+    color: #a71118;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.contacto-page .contacto-phone-card a:hover {
+    text-decoration: underline;
+}
+
+.contacto-page .contacto-phone-note {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.65;
+    margin: 24px 0 0;
+}
+
+/* ==========================================
+   REDES SOCIALES
+   ========================================== */
+
+.contacto-page .contacto-social-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.contacto-page .contacto-social-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+
+    background: #f5f4f1;
+    padding: 38px 32px;
+    border-bottom: 4px solid #dedbd4;
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease;
+}
+
+.contacto-page .contacto-social-card:hover {
+    transform: translateY(-4px);
+    border-bottom-color: #a71118;
+}
+
+.contacto-page .contacto-social-icon {
+    flex: 0 0 60px;
+    width: 60px;
+    height: 60px;
+
+    display: grid;
+    place-items: center;
+
+    background: #202020;
+    color: #fff;
+    font-size: 28px;
+}
+
+.contacto-page .contacto-social-content {
+    min-width: 0;
+}
+
+.contacto-page .contacto-social-card h3 {
+    color: #202020;
+    font-size: 26px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0 0 8px;
+}
+
+.contacto-page .contacto-social-user {
+    display: block;
+    color: #a71118;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 18px;
+    overflow-wrap: anywhere;
+}
+
+.contacto-page .contacto-social-card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0 0 22px;
+}
+
+.contacto-page .contacto-social-card a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    color: #a71118;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.contacto-page .contacto-social-card a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   FORMULARIO
+   ========================================== */
+
+.contacto-page .contacto-section-dark {
+    background: #191919;
+    color: #fff;
+}
+
+.contacto-page .contacto-section-dark .history-chapter {
+    color: var(--gold);
+}
+
+.contacto-page .contacto-form-layout {
+    display: grid;
+    grid-template-columns:
+        minmax(0, .85fr)
+        minmax(0, 1.15fr);
+
+    gap: clamp(35px, 6vw, 90px);
+    align-items: start;
+}
+
+.contacto-page .contacto-form-info h2 {
+    color: #fff;
+    font-size: clamp(36px, 4.5vw, 58px);
+    font-weight: 900;
+    line-height: 1.08;
+    text-transform: uppercase;
+    margin: 0 0 35px;
+}
+
+.contacto-page .contacto-form-info > p {
+    color: #c8c8c8;
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 0 0 23px;
+}
+
+.contacto-page .contacto-form-info .contacto-form-lead {
+    color: #fff;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.contacto-page .contacto-form-warning {
+    border-left: 4px solid var(--gold);
+    padding: 10px 0 10px 22px;
+    margin-top: 45px;
+}
+
+.contacto-page .contacto-form-warning strong {
+    display: block;
+    color: var(--gold);
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contacto-page .contacto-form-warning strong i {
+    margin-right: 8px;
+}
+
+.contacto-page .contacto-form-warning p {
+    color: #c8c8c8;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* CAJA DEL FORMULARIO */
+
+.contacto-page .contacto-form-box {
+    min-width: 0;
+    background: #fff;
+    color: #202020;
+    padding: clamp(25px, 3.5vw, 48px);
+    border-top: 5px solid var(--gold);
+}
+
+.contacto-page .contacto-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.contacto-page .contacto-form-header h3 {
+    font-size: clamp(22px, 2.5vw, 29px);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.contacto-page .contacto-demo-label {
+    display: inline-block;
+    background: #eeeeee;
+    color: #555;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    padding: 7px 10px;
+}
+
+.contacto-page .contacto-form-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+.contacto-page .contacto-field {
+    margin-bottom: 24px;
+    min-width: 0;
+}
+
+.contacto-page .contacto-field label {
+    display: block;
+    color: #333;
+    font-size: 13px;
+    font-weight: 900;
+    margin-bottom: 9px;
+}
+
+.contacto-page .contacto-field input,
+.contacto-page .contacto-field select,
+.contacto-page .contacto-field textarea {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+
+    border: 1px solid #d5d5d5;
+    border-radius: 0;
+    background: #fafafa;
+    color: #202020;
+
+    padding: 15px 16px;
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 1.5;
+
+    transition: border-color .2s ease;
+}
+
+.contacto-page .contacto-field textarea {
+    resize: vertical;
+    min-height: 145px;
+}
+
+.contacto-page .contacto-field input:focus,
+.contacto-page .contacto-field select:focus,
+.contacto-page .contacto-field textarea:focus {
+    outline: 2px solid rgba(167,17,24,.16);
+    border-color: #a71118;
+}
+
+/* BOTÓN */
+
+.contacto-page .contacto-submit {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    width: 100%;
+    padding: 19px 24px;
+    background: #a71118;
+    color: #fff;
+
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+    transition: background .2s ease;
+}
+
+.contacto-page .contacto-submit:hover {
+    background: #821016;
+}
+
+.contacto-page .contacto-submit:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 3px;
+}
+
+.contacto-page .contacto-submit:disabled {
+    opacity: .65;
+    cursor: not-allowed;
+}
+
+/* MENSAJE SIMULADO */
+
+.contacto-page .contacto-form-status {
+    display: none;
+    padding: 15px 18px;
+    margin: 20px 0 0;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+    border-left: 4px solid transparent;
+}
+
+.contacto-page .contacto-form-status.estado-exito {
+    display: block;
+    background: #edf7f0;
+    color: #206b37;
+    border-left-color: #2e8b57;
+}
+
+.contacto-page .contacto-form-privacy {
+    color: #777;
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 18px 0 0;
+}
+
+/* ==========================================
+   CORREO INSTITUCIONAL
+   ========================================== */
+
+.contacto-page .contacto-email-section {
+    background: #a71118;
+    color: #fff;
+    padding: 58px 0;
+}
+
+.contacto-page .contacto-email-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.contacto-page .contacto-email-section .history-chapter {
+    color: #f3cf81;
+    margin-bottom: 14px;
+}
+
+.contacto-page .contacto-email-section h2 {
+    font-size: clamp(25px, 3vw, 38px);
+    font-weight: 900;
+    line-height: 1.15;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+}
+
+.contacto-page .contacto-email-section p {
+    color: #f2dede;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+    max-width: 550px;
+}
+
+.contacto-page .contacto-email-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    color: #fff;
+    font-size: clamp(15px, 1.7vw, 20px);
+    font-weight: 900;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contacto-page .contacto-email-link:hover {
+    text-decoration: underline;
+}
+
+.contacto-page .contacto-email-link i {
+    font-size: 27px;
+}
+
+/* ==========================================
+   UBICACIÓN
+   ========================================== */
+
+.contacto-page .contacto-location-layout {
+    display: grid;
+    grid-template-columns:
+        minmax(240px, .7fr)
+        minmax(0, 1.3fr);
+    gap: 35px;
+    align-items: stretch;
+}
+
+.contacto-page .contacto-address {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background: #f5f4f1;
+    padding: 42px 35px;
+}
+
+.contacto-page .contacto-address-label {
+    color: #a71118;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-bottom: 25px;
+}
+
+.contacto-page .contacto-address h3 {
+    color: #202020;
+    font-size: clamp(28px, 3vw, 38px);
+    line-height: 1.1;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 0 0 18px;
+}
+
+.contacto-page .contacto-address p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0 0 30px;
+}
+
+.contacto-page .contacto-address a {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+
+    color: #a71118;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: auto;
+}
+
+.contacto-page .contacto-address a:hover {
+    text-decoration: underline;
+}
+
+.contacto-page .contacto-map {
+    min-height: 360px;
+    background: #eee;
+}
+
+.contacto-page .contacto-map iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 360px;
+    border: 0;
+}
+
+/* ==========================================
+   RESPONSIVE - TABLET
+   ========================================== */
+
+@media (max-width: 950px) {
+
+    .contacto-page .contacto-phones {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .contacto-page .contacto-form-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-page .contacto-email-layout {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* ==========================================
+   RESPONSIVE - CELULARES
+   ========================================== */
+
+@media (max-width: 700px) {
+
+    .contacto-page .contacto-section {
+        padding: 65px 0;
+    }
+
+    .contacto-page .contacto-intro {
+        padding: 70px 20px;
+    }
+
+    .contacto-page .contacto-phones,
+    .contacto-page .contacto-social-grid,
+    .contacto-page .contacto-location-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .contacto-page .contacto-social-card {
+        padding: 30px 25px;
+    }
+
+    .contacto-page .contacto-email-section {
+        padding: 45px 0;
+    }
+
+    .contacto-page .contacto-map,
+    .contacto-page .contacto-map iframe {
+        min-height: 330px;
+    }
+}
+
+/* ==========================================
+   CELULARES PEQUEÑOS
+   ========================================== */
+
+@media (max-width: 480px) {
+
+    .contacto-page .contacto-hero h1 {
+        font-size: clamp(45px, 11vw, 60px);
+    }
+
+    .contacto-page .contacto-form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contacto-page .contacto-form-box {
+        padding: 28px 22px;
+    }
+
+    .contacto-page .contacto-phone-card h3 {
+        font-size: 34px;
+    }
+
+    .contacto-page .contacto-social-card {
+        gap: 16px;
+    }
+
+    .contacto-page .contacto-social-icon {
+        flex-basis: 48px;
+        width: 48px;
+        height: 48px;
+        font-size: 23px;
+    }
+
+    .contacto-page .contacto-address {
+        padding: 32px 25px;
+    }
+
+    .contacto-page .contacto-email-link {
+        font-size: 15px;
+    }
+}

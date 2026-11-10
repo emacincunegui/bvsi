@@ -16,10 +16,10 @@
         dependencia: 'Cuartel Central', 
         estadoCredencial: 'vigente', /*Opciones: vigente, revision, inhabilitada , baja*/
 
-        foto: '../../assets/credenciales/fotos/LP-1030.jpg',
+        foto: '../../assets/credenciales/fotos/LP-1030.webp',
 
         insigniaJerarquia:
-            '../../assets/credenciales/jerarquias/ayudante.png',
+            '../../assets/credenciales/jerarquias/ayudante.webp',
 
         dni: '40.796.274',
         grupoSanguineo: 'A+',
@@ -31,49 +31,49 @@
             /*{
                 nombre: 'Rescate Acuático',
                 escudo:
-                    '../../assets/credenciales/divisiones/acuatico.png'
+                    '../../assets/credenciales/divisiones/acuatico.webp'
             },*/
             {
                 nombre: 'Busqueda y Rescate en Estructuras Colapsadas',
                 escudo:
-                    '../../assets/credenciales/divisiones/brec.png'
+                    '../../assets/credenciales/divisiones/brec.webp'
             },
             /*{
                 nombre: 'Buceo',
                 escudo:
-                    '../../assets/credenciales/divisiones/buceo.png'
+                    '../../assets/credenciales/divisiones/buceo.webp'
             },*/
             {
                 nombre: 'Rescate con Cuerdas',
                 escudo:
-                    '../../assets/credenciales/divisiones/cuerdas.png'
+                    '../../assets/credenciales/divisiones/cuerdas.webp'
             },
             /*{
                 nombre: 'Brigadista Forestal',
                 escudo:
-                    '../../assets/credenciales/divisiones/forestal.png'
+                    '../../assets/credenciales/divisiones/forestal.webp'
             },
             {
                 nombre: 'HAZ MAT',
                 escudo:
-                    '../../assets/credenciales/divisiones/hazmat.png'
+                    '../../assets/credenciales/divisiones/hazmat.webp'
             },
             {
                 nombre: 'Psicología de la Emergencia',
                 escudo:
-                    '../../assets/credenciales/divisiones/psicologia.png'
+                    '../../assets/credenciales/divisiones/psicologia.webp'
             },
             */
 
             {
                 nombre: 'USAR (Urban Search and Rescue)',
                 escudo:
-                    '../../assets/credenciales/divisiones/usar.png'
+                    '../../assets/credenciales/divisiones/usar.webp'
             },
             {
                 nombre: 'Rescate Vehicular',
                 escudo:
-                    '../../assets/credenciales/divisiones/vehicular.png'
+                    '../../assets/credenciales/divisiones/vehicular.webp'
             }
         ]
     };

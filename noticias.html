@@ -1,0 +1,664 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Noticias | Bomberos Voluntarios de San Isidro</title>
+
+    <meta name="description"
+          content="Bomberos Voluntarios de San Isidro celebraron su 87.º aniversario con una jornada abierta a la comunidad, juegos infantiles y exhibición de nuevas unidades.">
+
+    <link rel="icon"
+          href="assets/icons/favicon.ico"
+          sizes="any">
+
+    <!-- FUENTES -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Yaldevi:wght@100;200;300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+          rel="stylesheet">
+
+    <!-- ICONOS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/historia.css">
+    <link rel="stylesheet" href="css/noticias.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="site-header">
+
+        <div class="emergency-bar">
+
+            <div>
+                <strong>EMERGENCIAS:</strong>
+                <a href="tel:100">100</a> /
+                <a href="tel:47472222">4747-2222</a>
+            </div>
+
+            <div>
+                <strong>LÍNEA AUXILIAR:</strong>
+                <a href="tel:47478927">4747-8927</a>
+            </div>
+
+        </div>
+
+        <div class="red-band">
+
+            <a class="mobile-title"
+               href="index.html"
+               aria-label="Volver al inicio">
+
+                <span>BOMBEROS</span>
+                <span>SAN ISIDRO</span>
+
+            </a>
+
+            <button class="menu-toggle"
+                    aria-label="Abrir menú">
+                ☰
+            </button>
+
+        </div>
+
+        <!-- NAVEGACIÓN PRINCIPAL -->
+        <nav class="main-nav"
+             aria-label="Navegación principal">
+
+            <div class="nav-group nav-left">
+
+                <!-- CUARTELES -->
+                <div class="nav-item dropdown">
+
+                    <a href="#cuarteles">
+                        CUARTELES
+                        <span class="dropdown-arrow"></span>
+                    </a>
+
+                    <div class="dropdown-menu">
+
+                        <a href="cuarteles/cuartel-central.html">
+                            Cuartel Central
+                        </a>
+
+                        <a href="cuarteles/destacamento-1.html">
+                            Destacamento Nº1
+                        </a>
+
+                        <a href="cuarteles/destacamento-2.html">
+                            Destacamento Nº2
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- MÓVILES -->
+                <div class="nav-item dropdown dropdown-moviles">
+
+                    <a>
+                        MÓVILES
+                        <span class="dropdown-arrow"></span>
+                    </a>
+
+                    <div class="dropdown-menu">
+
+                        <a href="moviles/autobombas.html">
+                            Autobombas de Primera Intervención
+                        </a>
+
+                        <a href="moviles/cisternas.html">
+                            Autobombas Cisternas
+                        </a>
+
+                        <a href="moviles/especiales.html">
+                            Unidades Especiales
+                        </a>
+
+                        <a href="moviles/livianas.html">
+                            Unidades Livianas
+                        </a>
+
+                        <a href="moviles/historicos.html">
+                            Móviles Históricos
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- NOSOTROS -->
+                <div class="nav-item dropdown dropdown-nosotros">
+
+                    <a>
+                        NOSOTROS
+                        <span class="dropdown-arrow"></span>
+                    </a>
+
+                    <div class="dropdown-menu">
+
+                        <a href="nosotros/historia.html">
+                            Historia
+                        </a>
+
+                        <a href="nosotros/cuerpo-activo.html">
+                            Cuerpo Activo
+                        </a>
+
+                        <a href="nosotros/especialidades.html">
+                            Especialidades
+                        </a>
+
+                        <a href="nosotros/cuerpo-reserva-aux.html">
+                            Cuerpo de Reserva y Auxiliar
+                        </a>
+
+                        <a href="nosotros/comision-directiva.html">
+                            Comisión Directiva
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- SERVICIOS -->
+                <div class="nav-item dropdown dropdown-servicios">
+
+                    <a>
+                        SERVICIOS
+                        <span class="dropdown-arrow"></span>
+                    </a>
+
+                    <div class="dropdown-menu">
+
+                        <a href="servicios/labor-diaria.html">
+                            Labor Diaria
+                        </a>
+
+                        <a href="servicios/prevenciones.html">
+                            Prevenciones
+                        </a>
+
+                        <a href="servicios/capacitaciones.html">
+                            Capacitaciones
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- ESCUDO CENTRAL -->
+            <a href="index.html"
+               class="logo-wrap"
+               aria-label="Inicio">
+
+                <img src="assets/logo/escudo-bvsi.svg"
+                     alt="Escudo Bomberos Voluntarios de San Isidro">
+
+            </a>
+
+            <div class="nav-group nav-right">
+
+                <a href="noticias.html"
+                   aria-current="page">
+                    NOTICIAS
+                </a>
+
+                <a href="contacto.html">CONTACTO</a>
+
+                <a href="tecnica.html">
+                    OFICINA TÉCNICA
+                </a>
+
+                <a href="donaciones.html">
+                    DONACIONES
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ======================================
+         NOTICIAS
+         ====================================== -->
+
+    <main class="history-page noticias-page">
+
+        <!-- PORTADA -->
+        <section class="history-hero noticias-hero"
+                 aria-labelledby="noticias-title">
+
+            <img class="history-hero-image"
+                 src="assets/images/home/banner-final.webp"
+                 alt="Bomberos Voluntarios de San Isidro">
+
+            <div class="history-hero-shade"></div>
+
+            <div class="history-hero-content">
+
+                <span class="history-eyebrow">
+                    Sociedad de Bomberos Voluntarios de San Isidro
+                </span>
+
+                <h1 id="noticias-title">
+                    Noticias
+                </h1>
+
+                <p>
+                    Novedades, actividades
+                    y acontecimientos de nuestra institución.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUCCIÓN -->
+        <section class="history-intro noticias-intro">
+
+            <span class="history-kicker">
+                Actualidad institucional
+            </span>
+
+            <p>
+                Compartimos con nuestra comunidad
+                los acontecimientos, actividades
+                y momentos que forman parte
+                de la vida de nuestra institución.
+            </p>
+
+            <div class="history-intro-rule"></div>
+
+        </section>
+
+
+        <!-- ======================================
+             NOTICIA DESTACADA
+             ====================================== -->
+
+        <section class="noticias-section noticias-section-soft"
+                 id="actualidad">
+
+            <div class="history-shell">
+
+                <div class="noticias-heading">
+
+                    <span class="history-chapter">
+                        Actualidad / Institucional
+                    </span>
+
+                    <h2>Noticia destacada</h2>
+
+                </div>
+
+                <article class="noticias-featured">
+
+                    <div class="noticias-featured-visual">
+
+                        <img src="assets/images/home/banner-final.webp"
+                             alt="Imagen institucional de Bomberos de San Isidro"
+                             loading="lazy">
+
+                        <span class="noticias-featured-category">
+                            Institucional
+                        </span>
+
+                    </div>
+
+                    <div class="noticias-featured-content">
+
+                        <span class="noticias-date">
+                            Aniversario institucional · 2026
+                        </span>
+
+                        <h3>
+                            Bomberos Voluntarios de San Isidro
+                            celebran su 87.º aniversario
+                        </h3>
+
+                        <p>
+                            La institución compartió una jornada
+                            especial junto a los vecinos,
+                            con actividades para los más chicos
+                            y la presentación de las nuevas
+                            unidades incorporadas durante el año.
+                        </p>
+
+                        <a href="#aniversario"
+                           class="noticias-read-more">
+
+                            Leer noticia completa
+
+                            <i class="fa-solid fa-arrow-right"
+                               aria-hidden="true"></i>
+
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ======================================
+             ARTÍCULO COMPLETO
+             ====================================== -->
+
+        <article class="noticias-article"
+                 id="aniversario">
+
+            <div class="noticias-article-container">
+
+                <!-- ENCABEZADO DEL ARTÍCULO -->
+                <header class="noticias-article-header">
+
+                    <span class="noticias-article-category">
+                        Institucional / Aniversario
+                    </span>
+
+                    <h2>
+                        Bomberos Voluntarios de San Isidro
+                        celebran su 87.º aniversario
+                    </h2>
+
+                    <p class="noticias-article-summary">
+                        Con una jornada abierta a la comunidad,
+                        la institución celebró sus 87 años
+                        de historia, compartiendo actividades
+                        para toda la familia y presentando
+                        las nuevas unidades adquiridas
+                        durante 2026.
+                    </p>
+
+                    <div class="noticias-article-meta">
+
+                        <span>
+                            <i class="fa-regular fa-calendar"></i>
+                            2026
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            San Isidro, Buenos Aires
+                        </span>
+
+                    </div>
+
+                </header>
+
+
+                <!-- IMAGEN PRINCIPAL -->
+                <figure class="noticias-article-photo">
+
+                    <img src="assets/images/home/banner-final.webp"
+                         alt="Imagen institucional de Bomberos Voluntarios de San Isidro"
+                         loading="lazy">
+
+                    <figcaption>
+                        Imagen institucional ilustrativa.
+                        Reemplazar por una fotografía
+                        del festejo del 87.º aniversario.
+                    </figcaption>
+
+                </figure>
+
+
+                <!-- CUERPO DE LA NOTICIA -->
+                <div class="noticias-article-body">
+
+                    <p class="noticias-first-paragraph">
+                        La Sociedad de Bomberos Voluntarios
+                        de San Isidro celebró su
+                        <strong>87.º aniversario</strong>
+                        con una jornada especial abierta
+                        a la comunidad, en la que vecinos
+                        y familias pudieron acercarse
+                        para compartir las actividades
+                        organizadas por la institución.
+                    </p>
+
+                    <p>
+                        El encuentro se desarrolló sobre
+                        la <strong>avenida Unidad Nacional,
+                        entre la calle Italia y la avenida
+                        Santa Fe</strong>, donde se llevó
+                        adelante una muestra destinada
+                        a acercar la actividad de los
+                        bomberos voluntarios a los vecinos
+                        de San Isidro.
+                    </p>
+
+                    <h3>Una jornada para toda la familia</h3>
+
+                    <p>
+                        Durante la celebración se realizaron
+                        diferentes actividades recreativas,
+                        entre ellas juegos especialmente
+                        destinados a los niños,
+                        quienes tuvieron la oportunidad
+                        de disfrutar de una jornada
+                        diferente junto a sus familias.
+                    </p>
+
+                    <p>
+                        La iniciativa permitió generar
+                        un espacio de encuentro entre
+                        la institución y la comunidad,
+                        fortaleciendo el vínculo
+                        que une a los Bomberos Voluntarios
+                        de San Isidro con los vecinos.
+                    </p>
+
+                    <h3>Presentación de nuevas unidades</h3>
+
+                    <p>
+                        Uno de los momentos destacados
+                        de la jornada fue la exhibición
+                        y demostración de las
+                        <strong>nuevas unidades adquiridas
+                        durante 2026</strong>,
+                        que se incorporan a los recursos
+                        operativos de la institución.
+                    </p>
+
+                    <p>
+                        Los vecinos pudieron conocer
+                        de cerca estos vehículos,
+                        que representan una inversión
+                        destinada a fortalecer
+                        la capacidad de respuesta
+                        ante las diferentes emergencias.
+                    </p>
+
+                    <h3>87 años de vocación de servicio</h3>
+
+                    <p>
+                        Desde su fundación en 1939,
+                        Bomberos Voluntarios de San Isidro
+                        ha desarrollado una trayectoria
+                        marcada por el compromiso,
+                        la solidaridad y el trabajo
+                        al servicio de la comunidad.
+                    </p>
+
+                    <p>
+                        Este nuevo aniversario representa
+                        una oportunidad para recordar
+                        su historia, reconocer la dedicación
+                        de quienes forman parte
+                        de la institución y compartir
+                        con los vecinos el crecimiento
+                        alcanzado a lo largo de los años.
+                    </p>
+
+                    <p>
+                        La celebración de los 87 años
+                        reafirma el vínculo de la institución
+                        con San Isidro y su compromiso
+                        de continuar trabajando
+                        por la seguridad y el bienestar
+                        de la comunidad.
+                    </p>
+
+                </div>
+
+
+                <!-- ======================================
+                     GALERÍA FOTOGRÁFICA
+                     ====================================== -->
+
+                <section class="noticias-gallery"
+                         aria-labelledby="galeria-title">
+
+                    <div class="noticias-gallery-heading">
+
+                        <span class="history-chapter">
+                            Registro institucional
+                        </span>
+
+                        <h3 id="galeria-title">
+                            Imágenes de la celebración
+                        </h3>
+
+                        <p>
+                            Espacio destinado a fotografías
+                            de la muestra y las actividades
+                            del 87.º aniversario.
+                        </p>
+
+                    </div>
+
+                    <div class="noticias-gallery-grid">
+
+                        <div class="noticias-gallery-placeholder">
+                            <i class="fa-regular fa-image"
+                               aria-hidden="true"></i>
+                            <span>Fotografía 01</span>
+                        </div>
+
+                        <div class="noticias-gallery-placeholder">
+                            <i class="fa-regular fa-image"
+                               aria-hidden="true"></i>
+                            <span>Fotografía 02</span>
+                        </div>
+
+                        <div class="noticias-gallery-placeholder">
+                            <i class="fa-regular fa-image"
+                               aria-hidden="true"></i>
+                            <span>Fotografía 03</span>
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- PIE DEL ARTÍCULO -->
+                <footer class="noticias-article-footer">
+
+                    <span>
+                        Sociedad de Bomberos Voluntarios
+                        de San Isidro
+                    </span>
+
+                    <a href="#actualidad">
+                        Volver a noticias
+                        <i class="fa-solid fa-arrow-up"
+                           aria-hidden="true"></i>
+                    </a>
+
+                </footer>
+
+            </div>
+
+        </article>
+
+
+        <!-- ======================================
+             SEGUINOS EN NUESTRAS REDES
+             ====================================== -->
+
+        <section class="noticias-social-section">
+
+            <div class="history-shell">
+
+                <span class="history-chapter">
+                    Comunidad digital
+                </span>
+
+                <h2>Seguí nuestras novedades</h2>
+
+                <p>
+                    Acompañanos en nuestras redes sociales
+                    para conocer las actividades,
+                    novedades y acontecimientos
+                    de Bomberos Voluntarios de San Isidro.
+                </p>
+
+                <div class="noticias-social-links">
+
+                    <a href="https://www.instagram.com/bomberosdesanisidro/?hl=es"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <i class="fa-brands fa-instagram"></i>
+                        Instagram
+
+                    </a>
+
+                    <a href="https://www.facebook.com/bomberosdesanisidro/?locale=es_LA"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+                        Facebook
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+        <p>
+            Sociedad de Bomberos Voluntarios de San Isidro |
+            Todos los derechos reservados 2026 |
+            Designed and Developed by: Pyro Studios
+        </p>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,463 @@
+
+/* ==========================================
+   BVSI - OFICINA TÉCNICA
+   ========================================== */
+
+
+/* ==========================================
+   PORTADA
+   ========================================== */
+
+.tecnica-page .tecnica-hero .history-hero-image {
+    filter: none;
+    object-position: center 45%;
+}
+
+.tecnica-page .tecnica-hero .history-hero-shade {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0, 0, 0, .88),
+            rgba(0, 0, 0, .25) 85%
+        ),
+        linear-gradient(
+            0deg,
+            rgba(0, 0, 0, .55),
+            transparent 60%
+        );
+}
+
+
+/* ==========================================
+   INTRODUCCIÓN
+   ========================================== */
+
+.tecnica-page .tecnica-intro {
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+
+/* ==========================================
+   ESTRUCTURA GENERAL
+   ========================================== */
+
+.tecnica-page .tecnica-section {
+    padding: 100px 0;
+}
+
+.tecnica-page .tecnica-section-soft {
+    background: #f5f4f1;
+}
+
+.tecnica-page .tecnica-heading {
+    max-width: 850px;
+    margin-bottom: 52px;
+}
+
+.tecnica-page .tecnica-heading h2,
+.tecnica-page .tecnica-content h2 {
+    font-size: clamp(34px, 4.5vw, 58px);
+    font-weight: 900;
+    line-height: 1.08;
+    letter-spacing: -.025em;
+    text-transform: uppercase;
+    margin: 0 0 25px;
+}
+
+.tecnica-page .tecnica-heading p,
+.tecnica-page .tecnica-content p {
+    color: #383838;
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 0 0 20px;
+}
+
+
+/* ==========================================
+   DEPARTAMENTO TÉCNICO
+   ========================================== */
+
+.tecnica-page .tecnica-split {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.3fr)
+        minmax(280px, .8fr);
+    gap: clamp(45px, 7vw, 100px);
+    align-items: center;
+}
+
+.tecnica-page .tecnica-content .tecnica-lead {
+    color: #202020;
+    font-size: clamp(21px, 2.4vw, 27px);
+    font-weight: 700;
+    line-height: 1.45;
+    margin-bottom: 28px;
+}
+
+.tecnica-page .tecnica-highlight {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 52px 40px;
+    border-bottom: 5px solid var(--gold);
+}
+
+.tecnica-page .tecnica-highlight-label {
+    display: block;
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.tecnica-page .tecnica-highlight h3 {
+    color: #fff;
+    font-size: clamp(29px, 3.2vw, 43px);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin: 0 0 25px;
+}
+
+.tecnica-page .tecnica-highlight p {
+    color: #d1d1d1;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* ==========================================
+   PRINCIPIOS DE PROTECCIÓN
+   ========================================== */
+
+.tecnica-page .tecnica-principles {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.tecnica-page .tecnica-principle {
+    background: #fff;
+    padding: 42px 32px 45px;
+    border-top: 5px solid #a71118;
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+}
+
+.tecnica-page .tecnica-principle:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+}
+
+.tecnica-page .tecnica-principle-number {
+    display: block;
+    color: #adadad;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: .12em;
+    margin-bottom: 36px;
+}
+
+.tecnica-page .tecnica-principle h3 {
+    color: #181818;
+    font-size: clamp(23px, 2.3vw, 30px);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.15;
+    margin: 0 0 20px;
+}
+
+.tecnica-page .tecnica-principle p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+
+/* ==========================================
+   SERVICIOS OFRECIDOS
+   ========================================== */
+
+.tecnica-page .tecnica-services {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 55px;
+    border-top: 1px solid #dedede;
+}
+
+.tecnica-page .tecnica-service {
+    display: grid;
+    grid-template-columns: 38px minmax(0, 1fr);
+    gap: 20px;
+    padding: 34px 6px 38px;
+    border-bottom: 1px solid #dedede;
+}
+
+.tecnica-page .tecnica-service-number {
+    color: #a71118;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: .06em;
+    padding-top: 5px;
+}
+
+.tecnica-page .tecnica-service h3 {
+    color: #202020;
+    font-size: clamp(20px, 2vw, 25px);
+    font-weight: 900;
+    line-height: 1.25;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+}
+
+.tecnica-page .tecnica-service p {
+    color: #595959;
+    font-size: 15px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+
+/* ==========================================
+   ASESORAMIENTO TÉCNICO
+   ========================================== */
+
+.tecnica-page .tecnica-section-dark {
+    background: #191919;
+    color: #fff;
+}
+
+.tecnica-page .tecnica-section-dark .history-chapter {
+    color: var(--gold);
+}
+
+.tecnica-page .tecnica-dark-layout {
+    display: grid;
+    grid-template-columns:
+        minmax(0, 1.3fr)
+        minmax(280px, .7fr);
+    gap: clamp(45px, 7vw, 100px);
+    align-items: center;
+}
+
+.tecnica-page .tecnica-dark-content h2 {
+    color: #fff;
+    font-size: clamp(35px, 4.8vw, 62px);
+    font-weight: 900;
+    line-height: 1.08;
+    letter-spacing: -.025em;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+}
+
+.tecnica-page .tecnica-dark-content p {
+    color: #c8c8c8;
+    font-size: 17px;
+    line-height: 1.8;
+    margin: 0 0 22px;
+}
+
+.tecnica-page .tecnica-dark-aside {
+    border-top: 5px solid var(--gold);
+    padding: 35px;
+    background: #282828;
+}
+
+.tecnica-page .tecnica-dark-label {
+    display: block;
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+    margin-bottom: 30px;
+}
+
+.tecnica-page .tecnica-dark-aside strong {
+    display: block;
+    color: #fff;
+    font-size: clamp(30px, 3.2vw, 43px);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.2;
+    overflow-wrap: break-word;
+    margin-bottom: 25px;
+}
+
+.tecnica-page .tecnica-dark-aside p {
+    color: #c8c8c8;
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+
+/* ==========================================
+   CONTACTO
+   ========================================== */
+
+.tecnica-page .tecnica-contact {
+    background: #fff;
+    text-align: center;
+    padding: 105px 20px;
+}
+
+.tecnica-page .tecnica-contact h2 {
+    max-width: 850px;
+    margin: 0 auto 25px;
+    color: #202020;
+    font-size: clamp(34px, 5vw, 60px);
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.tecnica-page .tecnica-contact p {
+    max-width: 710px;
+    color: #444;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0 auto 35px;
+}
+
+.tecnica-page .tecnica-contact-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: #a71118;
+    color: #fff;
+    padding: 19px 30px;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition:
+        background .2s ease,
+        transform .2s ease;
+}
+
+.tecnica-page .tecnica-contact-button:hover {
+    background: #821016;
+    transform: translateY(-2px);
+}
+
+.tecnica-page .tecnica-contact-button:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 4px;
+}
+
+.tecnica-page .tecnica-contact-button span {
+    font-size: 22px;
+    line-height: 1;
+}
+
+
+/* ==========================================
+   RESPONSIVE - TABLET
+   ========================================== */
+
+@media (max-width: 900px) {
+
+    .tecnica-page .tecnica-split,
+    .tecnica-page .tecnica-dark-layout {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .tecnica-page .tecnica-principles {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .tecnica-page .tecnica-highlight {
+        padding: 40px;
+    }
+
+    .tecnica-page .tecnica-services {
+        column-gap: 28px;
+    }
+}
+
+
+/* ==========================================
+   RESPONSIVE - CELULARES
+   ========================================== */
+
+@media (max-width: 700px) {
+
+    .tecnica-page .tecnica-section {
+        padding: 65px 0;
+    }
+
+    .tecnica-page .tecnica-intro {
+        padding: 70px 20px;
+    }
+
+    .tecnica-page .tecnica-principles,
+    .tecnica-page .tecnica-services {
+        grid-template-columns: 1fr;
+    }
+
+    .tecnica-page .tecnica-principle {
+        padding: 30px 25px;
+    }
+
+    .tecnica-page .tecnica-principle-number {
+        margin-bottom: 22px;
+    }
+
+    .tecnica-page .tecnica-service {
+        padding: 27px 5px;
+    }
+
+    .tecnica-page .tecnica-dark-content p {
+        font-size: 16px;
+    }
+
+    .tecnica-page .tecnica-contact {
+        padding: 75px 20px;
+    }
+
+    .tecnica-page .tecnica-contact p {
+        font-size: 16px;
+    }
+}
+
+
+/* ==========================================
+   CELULARES PEQUEÑOS
+   ========================================== */
+
+@media (max-width: 480px) {
+
+    .tecnica-page .tecnica-hero h1 {
+        font-size: clamp(44px, 10vw, 53px);
+    }
+
+    .tecnica-page .tecnica-content p,
+    .tecnica-page .tecnica-heading p {
+        font-size: 16px;
+        line-height: 1.75;
+    }
+
+    .tecnica-page .tecnica-highlight,
+    .tecnica-page .tecnica-dark-aside {
+        padding: 30px 25px;
+    }
+
+    .tecnica-page .tecnica-service {
+        grid-template-columns: 30px minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    .tecnica-page .tecnica-contact-button {
+        width: 100%;
+        max-width: 320px;
+    }
+}
